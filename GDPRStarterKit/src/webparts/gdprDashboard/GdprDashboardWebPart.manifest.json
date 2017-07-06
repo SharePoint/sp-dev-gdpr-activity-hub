@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "8805cdf9-9e29-4c17-b0a5-797950a6a4bd",
+  "alias": "GdprDashboardWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "8805cdf9-9e29-4c17-b0a5-797950a6a4bd",
+    "group": { "default": "GDPR" },
+    "title": { "default": "GDPR Dashboard" },
+    "description": { "default": "GDPR Starter Kit Dashboard" },
+    "officeFabricIconFontName": "TaskManager",
+    "properties": {
+      "phasesImageUrl": "",
+      "phasesMap": ""
+    }
+  }]
+}

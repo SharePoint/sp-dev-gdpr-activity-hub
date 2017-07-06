@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "d67d6088-e294-4a23-af02-c4ea8783c23f",
+  "alias": "GdprInsertEventWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "d67d6088-e294-4a23-af02-c4ea8783c23f",
+    "group": { "default": "GDPR" },
+    "title": { "default": "GDPR Insert Event" },
+    "description": { "default": "Allows to insert a new GDPR Event or Incident" },
+    "officeFabricIconFontName": "PageAdd",
+    "properties": {
+      "description": "GDPRInsertEvent"
+    }
+  }]
+}

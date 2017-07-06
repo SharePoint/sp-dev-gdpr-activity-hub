@@ -1,0 +1,668 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.14.1704.0, Culture=neutral, PublicKeyToken=null" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-EADC08F05165470DAE65274BD0B9565C">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-EADC08F05165470DAE65274BD0B9565C" Version="1" BaseSiteTemplate="GROUP#0">
+      <pnp:Workflows>
+        <pnp:WorkflowDefinitions>
+          <pnp:WorkflowDefinition Id="ac552ede-9be6-4905-8264-b07f8fa0cc44" Description="Sample workflow to manage a Data Breach" DisplayName="Data Breach Management" InitiationUrl="" Published="true" RequiresAssociationForm="false" RequiresInitiationForm="false" RestrictToScope="{listid:Events}" RestrictToType="List" XamlPath="ac552ede-9be6-4905-8264-b07f8fa0cc44.xaml">
+            <pnp:Properties>
+              <pnp:Property Key="WSPublishState" Value="3" />
+              <pnp:Property Key="RestrictToScope" Value="{listid:Events}" />
+              <pnp:Property Key="SPDConfig.StartOnCreate" Value="true" />
+              <pnp:Property Key="HistoryListId" Value="{listid:Workflow History}" />
+              <pnp:Property Key="ContentTypeId" Value="0x01002A2479FF33DD4BC3B1533A012B653717003839EAFC0FDDEA408D70C52B8A9A2612" />
+              <pnp:Property Key="Definition.Description" Value="Sample workflow to manage a Data Breach" />
+              <pnp:Property Key="vti_modifiedby" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="vti_parserversion" Value="16.0.0.6614" />
+              <pnp:Property Key="SubscriptionId" Value="{E582B86A-54CA-4793-9271-AA57A6BEAE56}" />
+              <pnp:Property Key="FormField" Value="&lt;Fields /&gt;" />
+              <pnp:Property Key="vti_author" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="vti_foldersubfolderitemcount" Value="0" />
+              <pnp:Property Key="vti_writevalidationtoken" Value="Y6dBdQfCaPU9I6cughDd5XHJk3E=" />
+              <pnp:Property Key="InitiationUrl" Value="" />
+              <pnp:Property Key="Definition.DisplayName" Value="Data Breach Management" />
+              <pnp:Property Key="IsProjectMode" Value="false" />
+              <pnp:Property Key="SubscriptionName" Value="Data Breach Management" />
+              <pnp:Property Key="SPDConfig.LastEditMode" Value="TextBased" />
+              <pnp:Property Key="isReusable" Value="false" />
+              <pnp:Property Key="AutosetStatusToStageName" Value="true" />
+              <pnp:Property Key="SPDConfig.StartOnChange" Value="false" />
+              <pnp:Property Key="vti_folderitemcount" Value="0" />
+              <pnp:Property Key="SPDConfig.StartManually" Value="true" />
+              <pnp:Property Key="Definition.Id" Value="ac552ede-9be6-4905-8264-b07f8fa0cc44" />
+              <pnp:Property Key="RequiresInitiationForm" Value="false" />
+              <pnp:Property Key="RestrictToType" Value="List" />
+              <pnp:Property Key="TaskListId" Value="{listid:Tasks}" />
+              <pnp:Property Key="vti_dbschemaversion" Value="16.0.130.0" />
+              <pnp:Property Key="Definition.Name" Value="workflow.xaml" />
+              <pnp:Property Key="vti_sprocsschemaversion" Value="16.0.220.0" />
+              <pnp:Property Key="Definition.ListItemId" Value="5" />
+              <pnp:Property Key="ContentType" Value="WorkflowServiceDefinition" />
+              <pnp:Property Key="Definition.CreatedDate" Value="6/27/2017 6:52:30 AM" />
+              <pnp:Property Key="Definition.AuthorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:Property Key="Definition.ModifiedDate" Value="6/27/2017 7:47:58 AM" />
+              <pnp:Property Key="Definition.EditorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:Property Key="_ModerationStatus" Value="0" />
+              <pnp:Property Key="Definition.FullName" Value="/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44/workflow.xaml" />
+              <pnp:Property Key="Definition.Path" Value="/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44" />
+              <pnp:Property Key="Definition.ModifiedDateUTC" Value="6/27/2017 2:47:58 PM" />
+              <pnp:Property Key="Definition.CreatedDateUTC" Value="6/27/2017 1:52:30 PM" />
+              <pnp:Property Key="File_x0020_Size" Value="22522" />
+              <pnp:Property Key="FSObjType" Value="0" />
+              <pnp:Property Key="SortBehavior" Value="5;#0" />
+              <pnp:Property Key="PermMask" Value="0x7ffffffffffbffff" />
+              <pnp:Property Key="CheckedOutUserId" Value="5;#" />
+              <pnp:Property Key="IsCheckedoutToLocal" Value="0" />
+              <pnp:Property Key="UniqueId" Value="3505b36c-ce0f-4998-8a25-d17881494656" />
+              <pnp:Property Key="SyncClientId" Value="5;#" />
+              <pnp:Property Key="ProgId" Value="" />
+              <pnp:Property Key="ScopeId" Value="{E1C2A6A7-A384-4493-BDF9-44994ADEFE2F}" />
+              <pnp:Property Key="VirusStatus" Value="5;#22522" />
+              <pnp:Property Key="CheckedOutTitle" Value="5;#" />
+              <pnp:Property Key="_CheckinComment" Value="" />
+              <pnp:Property Key="Definition.EditorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="Definition.AuthorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="File_x0020_Type" Value="xaml" />
+              <pnp:Property Key="_EditMenuTableStart" Value="workflow.xaml" />
+              <pnp:Property Key="_EditMenuTableStart2" Value="5" />
+              <pnp:Property Key="_EditMenuTableEnd" Value="5" />
+              <pnp:Property Key="LinkFilenameNoMenu" Value="workflow.xaml" />
+              <pnp:Property Key="LinkFilename" Value="workflow.xaml" />
+              <pnp:Property Key="LinkFilename2" Value="workflow.xaml" />
+              <pnp:Property Key="DocIcon" Value="xaml" />
+              <pnp:Property Key="ServerUrl" Value="/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44/workflow.xaml" />
+              <pnp:Property Key="EncodedAbsUrl" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44/workflow.xaml" />
+              <pnp:Property Key="BaseName" Value="workflow" />
+              <pnp:Property Key="FileSizeDisplay" Value="22522" />
+              <pnp:Property Key="MetaInfo" Value="SPDConfig.StartManually:SW|true&#xD;&#xA;vti_parserversion:SR|16.0.0.6614&#xD;&#xA;WSDescription:SW|Sample workflow to manage a Data Breach&#xD;&#xA;IsProjectMode:SW|false&#xD;&#xA;WSGUID:SW|ac552ede-9be6-4905-8264-b07f8fa0cc44&#xD;&#xA;WSDisplayName:SW|Data Breach Management&#xD;&#xA;WSPublishState:IW|3&#xD;&#xA;vti_author:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_dbschemaversion:SR|16.0.130.0&#xD;&#xA;vti_sprocsschemaversion:SR|16.0.220.0&#xD;&#xA;SPDConfig.StartOnChange:SW|false&#xD;&#xA;AutosetStatusToStageName:SW|true&#xD;&#xA;SubscriptionName:SW|Data Breach Management&#xD;&#xA;vti_writevalidationtoken:SW|Y6dBdQfCaPU9I6cughDd5XHJk3E=&#xD;&#xA;RestrictToScope:SW|4E006C08-C0AB-4F71-B94A-B58FC15578C3&#xD;&#xA;RestrictToType:SW|List&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;HistoryListId:SW|{F73EAC3F-6848-4D9B-A65A-EB77BD92E142}&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x01002A2479FF33DD4BC3B1533A012B653717003839EAFC0FDDEA408D70C52B8A9A2612&#xD;&#xA;SPDConfig.StartOnCreate:SW|true&#xD;&#xA;FileLeafRef:SW|workflow.xaml&#xD;&#xA;RequiresInitiationForm:SW|false&#xD;&#xA;InitiationUrl:SW|&#xD;&#xA;SubscriptionId:SW|{E582B86A-54CA-4793-9271-AA57A6BEAE56}&#xD;&#xA;FormField:SW|&lt;Fields /&gt;&#xD;&#xA;TaskListId:SW|{B6425E6C-4088-4EB3-B17D-AAF79433C741}&#xD;&#xA;SPDConfig.LastEditMode:SW|TextBased&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;isReusable:SW|false&#xD;&#xA;" />
+              <pnp:Property Key="_Level" Value="1" />
+              <pnp:Property Key="_IsCurrentVersion" Value="True" />
+              <pnp:Property Key="ItemChildCount" Value="0" />
+              <pnp:Property Key="FolderChildCount" Value="0" />
+              <pnp:Property Key="Restricted" Value="" />
+              <pnp:Property Key="OriginatorId" Value="" />
+              <pnp:Property Key="NoExecute" Value="1" />
+              <pnp:Property Key="ContentVersion" Value="9" />
+              <pnp:Property Key="_ComplianceFlags" Value="" />
+              <pnp:Property Key="_ComplianceTag" Value="" />
+              <pnp:Property Key="_ComplianceTagWrittenTime" Value="" />
+              <pnp:Property Key="_ComplianceTagUserId" Value="" />
+              <pnp:Property Key="BSN" Value="358" />
+              <pnp:Property Key="_ListSchemaVersion" Value="" />
+              <pnp:Property Key="_Dirty" Value="0" />
+              <pnp:Property Key="_Parsable" Value="0" />
+              <pnp:Property Key="AccessPolicy" Value="" />
+              <pnp:Property Key="SMTotalSize" Value="562565" />
+              <pnp:Property Key="SMLastModifiedDate" Value="2017-06-27 07:47:59" />
+              <pnp:Property Key="SMTotalFileStreamSize" Value="22522" />
+              <pnp:Property Key="SMTotalFileCount" Value="1" />
+              <pnp:Property Key="SelectTitle" Value="5" />
+              <pnp:Property Key="SelectFilename" Value="5" />
+              <pnp:Property Key="Edit" Value="0" />
+              <pnp:Property Key="owshiddenversion" Value="24" />
+              <pnp:Property Key="_UIVersion" Value="12288" />
+              <pnp:Property Key="_UIVersionString" Value="24.0" />
+              <pnp:Property Key="Order" Value="500" />
+              <pnp:Property Key="GUID" Value="{B6BD864E-D98B-413F-9463-4D9AB9A7C793}" />
+              <pnp:Property Key="WorkflowVersion" Value="1" />
+              <pnp:Property Key="ParentVersionString" Value="5;#" />
+              <pnp:Property Key="ParentLeafName" Value="5;#" />
+              <pnp:Property Key="DocConcurrencyNumber" Value="24" />
+              <pnp:Property Key="ParentUniqueId" Value="{366D6A47-9C93-4EC4-A06F-539C797573D3}" />
+              <pnp:Property Key="StreamHash" Value="0x0263A7417507C268F53D23A72E8210DDE571C99371" />
+              <pnp:Property Key="ModifiedBy" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+            </pnp:Properties>
+            <pnp:FormField>
+              <Fields />
+            </pnp:FormField>
+          </pnp:WorkflowDefinition>
+          <pnp:WorkflowDefinition Id="e8d4ef94-75ef-4d39-883d-c6661f768ac7" Description="Sample workflow to validate external data processing" DisplayName="External Data Processing" InitiationUrl="" Published="true" RequiresAssociationForm="false" RequiresInitiationForm="false" RestrictToScope="{listid:Events}" RestrictToType="List" XamlPath="e8d4ef94-75ef-4d39-883d-c6661f768ac7.xaml">
+            <pnp:Properties>
+              <pnp:Property Key="WSPublishState" Value="3" />
+              <pnp:Property Key="RestrictToScope" Value="{listid:Events}" />
+              <pnp:Property Key="SPDConfig.StartOnCreate" Value="true" />
+              <pnp:Property Key="HistoryListId" Value="{listid:Workflow History}" />
+              <pnp:Property Key="ContentTypeId" Value="0x01002A2479FF33DD4BC3B1533A012B653717003839EAFC0FDDEA408D70C52B8A9A2612" />
+              <pnp:Property Key="Definition.Description" Value="Sample workflow to validate external data processing" />
+              <pnp:Property Key="vti_modifiedby" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="vti_parserversion" Value="16.0.0.6614" />
+              <pnp:Property Key="SubscriptionId" Value="{5CA85A79-D9E5-4FD4-97BE-4924382B15BB}" />
+              <pnp:Property Key="FormField" Value="&lt;Fields /&gt;" />
+              <pnp:Property Key="vti_author" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="vti_foldersubfolderitemcount" Value="0" />
+              <pnp:Property Key="vti_writevalidationtoken" Value="f6L60fY2jSkJFdh8jaKfO4kwvUw=" />
+              <pnp:Property Key="InitiationUrl" Value="" />
+              <pnp:Property Key="Definition.DisplayName" Value="External Data Processing" />
+              <pnp:Property Key="IsProjectMode" Value="false" />
+              <pnp:Property Key="SubscriptionName" Value="External Data Processing" />
+              <pnp:Property Key="SPDConfig.LastEditMode" Value="TextBased" />
+              <pnp:Property Key="isReusable" Value="false" />
+              <pnp:Property Key="AutosetStatusToStageName" Value="true" />
+              <pnp:Property Key="SPDConfig.StartOnChange" Value="false" />
+              <pnp:Property Key="vti_folderitemcount" Value="0" />
+              <pnp:Property Key="SPDConfig.StartManually" Value="true" />
+              <pnp:Property Key="Definition.Id" Value="e8d4ef94-75ef-4d39-883d-c6661f768ac7" />
+              <pnp:Property Key="RequiresInitiationForm" Value="false" />
+              <pnp:Property Key="RestrictToType" Value="List" />
+              <pnp:Property Key="TaskListId" Value="{listid:Tasks}" />
+              <pnp:Property Key="vti_dbschemaversion" Value="16.0.130.0" />
+              <pnp:Property Key="Definition.Name" Value="workflow.xaml" />
+              <pnp:Property Key="vti_sprocsschemaversion" Value="16.0.220.0" />
+              <pnp:Property Key="Definition.ListItemId" Value="8" />
+              <pnp:Property Key="ContentType" Value="WorkflowServiceDefinition" />
+              <pnp:Property Key="Definition.CreatedDate" Value="6/27/2017 7:31:47 AM" />
+              <pnp:Property Key="Definition.AuthorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:Property Key="Definition.ModifiedDate" Value="6/27/2017 7:46:51 AM" />
+              <pnp:Property Key="Definition.EditorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:Property Key="_ModerationStatus" Value="0" />
+              <pnp:Property Key="Definition.FullName" Value="/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7/workflow.xaml" />
+              <pnp:Property Key="Definition.Path" Value="/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7" />
+              <pnp:Property Key="Definition.ModifiedDateUTC" Value="6/27/2017 2:46:51 PM" />
+              <pnp:Property Key="Definition.CreatedDateUTC" Value="6/27/2017 2:31:47 PM" />
+              <pnp:Property Key="File_x0020_Size" Value="20292" />
+              <pnp:Property Key="FSObjType" Value="0" />
+              <pnp:Property Key="SortBehavior" Value="8;#0" />
+              <pnp:Property Key="PermMask" Value="0x7ffffffffffbffff" />
+              <pnp:Property Key="CheckedOutUserId" Value="8;#" />
+              <pnp:Property Key="IsCheckedoutToLocal" Value="0" />
+              <pnp:Property Key="UniqueId" Value="e7a87168-fff8-4587-b0f3-737a9bacc4ce" />
+              <pnp:Property Key="SyncClientId" Value="8;#" />
+              <pnp:Property Key="ProgId" Value="" />
+              <pnp:Property Key="ScopeId" Value="{E1C2A6A7-A384-4493-BDF9-44994ADEFE2F}" />
+              <pnp:Property Key="VirusStatus" Value="8;#20292" />
+              <pnp:Property Key="CheckedOutTitle" Value="8;#" />
+              <pnp:Property Key="_CheckinComment" Value="" />
+              <pnp:Property Key="Definition.EditorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="Definition.AuthorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="File_x0020_Type" Value="xaml" />
+              <pnp:Property Key="_EditMenuTableStart" Value="workflow.xaml" />
+              <pnp:Property Key="_EditMenuTableStart2" Value="8" />
+              <pnp:Property Key="_EditMenuTableEnd" Value="8" />
+              <pnp:Property Key="LinkFilenameNoMenu" Value="workflow.xaml" />
+              <pnp:Property Key="LinkFilename" Value="workflow.xaml" />
+              <pnp:Property Key="LinkFilename2" Value="workflow.xaml" />
+              <pnp:Property Key="DocIcon" Value="xaml" />
+              <pnp:Property Key="ServerUrl" Value="/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7/workflow.xaml" />
+              <pnp:Property Key="EncodedAbsUrl" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7/workflow.xaml" />
+              <pnp:Property Key="BaseName" Value="workflow" />
+              <pnp:Property Key="FileSizeDisplay" Value="20292" />
+              <pnp:Property Key="MetaInfo" Value="SPDConfig.StartManually:SW|true&#xD;&#xA;vti_parserversion:SR|16.0.0.6614&#xD;&#xA;WSDescription:SW|Sample workflow to validate external data processing&#xD;&#xA;IsProjectMode:SW|false&#xD;&#xA;WSGUID:SW|e8d4ef94-75ef-4d39-883d-c6661f768ac7&#xD;&#xA;WSDisplayName:SW|External Data Processing&#xD;&#xA;WSPublishState:IW|3&#xD;&#xA;vti_author:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_dbschemaversion:SR|16.0.130.0&#xD;&#xA;vti_sprocsschemaversion:SR|16.0.220.0&#xD;&#xA;SPDConfig.StartOnChange:SW|false&#xD;&#xA;AutosetStatusToStageName:SW|true&#xD;&#xA;SubscriptionName:SW|External Data Processing&#xD;&#xA;vti_writevalidationtoken:SW|f6L60fY2jSkJFdh8jaKfO4kwvUw=&#xD;&#xA;RestrictToScope:SW|4E006C08-C0AB-4F71-B94A-B58FC15578C3&#xD;&#xA;RestrictToType:SW|List&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;HistoryListId:SW|{F73EAC3F-6848-4D9B-A65A-EB77BD92E142}&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x01002A2479FF33DD4BC3B1533A012B653717003839EAFC0FDDEA408D70C52B8A9A2612&#xD;&#xA;SPDConfig.StartOnCreate:SW|true&#xD;&#xA;FileLeafRef:SW|workflow.xaml&#xD;&#xA;RequiresInitiationForm:SW|false&#xD;&#xA;InitiationUrl:SW|&#xD;&#xA;SubscriptionId:SW|{5CA85A79-D9E5-4FD4-97BE-4924382B15BB}&#xD;&#xA;FormField:SW|&lt;Fields /&gt;&#xD;&#xA;TaskListId:SW|{B6425E6C-4088-4EB3-B17D-AAF79433C741}&#xD;&#xA;SPDConfig.LastEditMode:SW|TextBased&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;isReusable:SW|false&#xD;&#xA;" />
+              <pnp:Property Key="_Level" Value="1" />
+              <pnp:Property Key="_IsCurrentVersion" Value="True" />
+              <pnp:Property Key="ItemChildCount" Value="0" />
+              <pnp:Property Key="FolderChildCount" Value="0" />
+              <pnp:Property Key="Restricted" Value="" />
+              <pnp:Property Key="OriginatorId" Value="" />
+              <pnp:Property Key="NoExecute" Value="1" />
+              <pnp:Property Key="ContentVersion" Value="7" />
+              <pnp:Property Key="_ComplianceFlags" Value="" />
+              <pnp:Property Key="_ComplianceTag" Value="" />
+              <pnp:Property Key="_ComplianceTagWrittenTime" Value="" />
+              <pnp:Property Key="_ComplianceTagUserId" Value="" />
+              <pnp:Property Key="BSN" Value="254" />
+              <pnp:Property Key="_ListSchemaVersion" Value="" />
+              <pnp:Property Key="_Dirty" Value="0" />
+              <pnp:Property Key="_Parsable" Value="0" />
+              <pnp:Property Key="AccessPolicy" Value="" />
+              <pnp:Property Key="SMTotalSize" Value="333033" />
+              <pnp:Property Key="SMLastModifiedDate" Value="2017-06-27 07:46:51" />
+              <pnp:Property Key="SMTotalFileStreamSize" Value="20292" />
+              <pnp:Property Key="SMTotalFileCount" Value="1" />
+              <pnp:Property Key="SelectTitle" Value="8" />
+              <pnp:Property Key="SelectFilename" Value="8" />
+              <pnp:Property Key="Edit" Value="0" />
+              <pnp:Property Key="owshiddenversion" Value="16" />
+              <pnp:Property Key="_UIVersion" Value="8192" />
+              <pnp:Property Key="_UIVersionString" Value="16.0" />
+              <pnp:Property Key="Order" Value="800" />
+              <pnp:Property Key="GUID" Value="{8BE673DC-936F-436B-AABA-28CC51A5D7BE}" />
+              <pnp:Property Key="WorkflowVersion" Value="1" />
+              <pnp:Property Key="ParentVersionString" Value="8;#" />
+              <pnp:Property Key="ParentLeafName" Value="8;#" />
+              <pnp:Property Key="DocConcurrencyNumber" Value="16" />
+              <pnp:Property Key="ParentUniqueId" Value="{107DE18F-6DC9-44FB-8472-3FD1D45C9345}" />
+              <pnp:Property Key="StreamHash" Value="0x027FA2FAD1F6368D290915D87C8DA29F3B8930BD4C" />
+              <pnp:Property Key="ModifiedBy" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+            </pnp:Properties>
+            <pnp:FormField>
+              <Fields />
+            </pnp:FormField>
+          </pnp:WorkflowDefinition>
+          <pnp:WorkflowDefinition Id="ef2f50ba-7a12-4f34-9e97-35cd6de3d4b7" Description="Sample workflow to manage a Request to Access Personal Data" DisplayName="Request to Access Personal Data Management" InitiationUrl="" Published="true" RequiresAssociationForm="false" RequiresInitiationForm="false" RestrictToScope="{listid:Requests}" RestrictToType="List" XamlPath="ef2f50ba-7a12-4f34-9e97-35cd6de3d4b7.xaml">
+            <pnp:Properties>
+              <pnp:Property Key="WSPublishState" Value="3" />
+              <pnp:Property Key="RestrictToScope" Value="{listid:Requests}" />
+              <pnp:Property Key="SPDConfig.StartOnCreate" Value="true" />
+              <pnp:Property Key="HistoryListId" Value="{listid:Workflow History}" />
+              <pnp:Property Key="ContentTypeId" Value="0x01002A2479FF33DD4BC3B1533A012B653717003839EAFC0FDDEA408D70C52B8A9A2612" />
+              <pnp:Property Key="Definition.Description" Value="Sample workflow to manage a Request to Access Personal Data" />
+              <pnp:Property Key="vti_modifiedby" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="vti_parserversion" Value="16.0.0.6614" />
+              <pnp:Property Key="SubscriptionId" Value="{2116AE9E-AB64-4F4B-838B-3964B460F50D}" />
+              <pnp:Property Key="FormField" Value="&lt;Fields /&gt;" />
+              <pnp:Property Key="vti_author" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="vti_foldersubfolderitemcount" Value="0" />
+              <pnp:Property Key="vti_writevalidationtoken" Value="sjUsVEZRBZDUQgJzJDR9VS8kYtA=" />
+              <pnp:Property Key="InitiationUrl" Value="" />
+              <pnp:Property Key="Definition.DisplayName" Value="Request to Access Personal Data Management" />
+              <pnp:Property Key="IsProjectMode" Value="false" />
+              <pnp:Property Key="SubscriptionName" Value="Request to Access Personal Data Management" />
+              <pnp:Property Key="SPDConfig.LastEditMode" Value="TextBased" />
+              <pnp:Property Key="isReusable" Value="false" />
+              <pnp:Property Key="AutosetStatusToStageName" Value="true" />
+              <pnp:Property Key="SPDConfig.StartOnChange" Value="false" />
+              <pnp:Property Key="vti_folderitemcount" Value="0" />
+              <pnp:Property Key="SPDConfig.StartManually" Value="true" />
+              <pnp:Property Key="Definition.Id" Value="ef2f50ba-7a12-4f34-9e97-35cd6de3d4b7" />
+              <pnp:Property Key="RequiresInitiationForm" Value="false" />
+              <pnp:Property Key="RestrictToType" Value="List" />
+              <pnp:Property Key="TaskListId" Value="{listid:Tasks}" />
+              <pnp:Property Key="vti_dbschemaversion" Value="16.0.130.0" />
+              <pnp:Property Key="Definition.Name" Value="workflow.xaml" />
+              <pnp:Property Key="vti_sprocsschemaversion" Value="16.0.220.0" />
+              <pnp:Property Key="Definition.ListItemId" Value="11" />
+              <pnp:Property Key="ContentType" Value="WorkflowServiceDefinition" />
+              <pnp:Property Key="Definition.CreatedDate" Value="6/27/2017 8:51:29 AM" />
+              <pnp:Property Key="Definition.AuthorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:Property Key="Definition.ModifiedDate" Value="6/27/2017 8:52:59 AM" />
+              <pnp:Property Key="Definition.EditorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:Property Key="_ModerationStatus" Value="0" />
+              <pnp:Property Key="Definition.FullName" Value="/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7/workflow.xaml" />
+              <pnp:Property Key="Definition.Path" Value="/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7" />
+              <pnp:Property Key="Definition.ModifiedDateUTC" Value="6/27/2017 3:52:59 PM" />
+              <pnp:Property Key="Definition.CreatedDateUTC" Value="6/27/2017 3:51:29 PM" />
+              <pnp:Property Key="File_x0020_Size" Value="19772" />
+              <pnp:Property Key="FSObjType" Value="0" />
+              <pnp:Property Key="SortBehavior" Value="11;#0" />
+              <pnp:Property Key="PermMask" Value="0x7ffffffffffbffff" />
+              <pnp:Property Key="CheckedOutUserId" Value="11;#" />
+              <pnp:Property Key="IsCheckedoutToLocal" Value="0" />
+              <pnp:Property Key="UniqueId" Value="b47ab576-1689-4e8e-85b0-758bc94ff74c" />
+              <pnp:Property Key="SyncClientId" Value="11;#" />
+              <pnp:Property Key="ProgId" Value="" />
+              <pnp:Property Key="ScopeId" Value="{E1C2A6A7-A384-4493-BDF9-44994ADEFE2F}" />
+              <pnp:Property Key="VirusStatus" Value="11;#19772" />
+              <pnp:Property Key="CheckedOutTitle" Value="11;#" />
+              <pnp:Property Key="_CheckinComment" Value="" />
+              <pnp:Property Key="Definition.EditorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="Definition.AuthorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:Property Key="File_x0020_Type" Value="xaml" />
+              <pnp:Property Key="_EditMenuTableStart" Value="workflow.xaml" />
+              <pnp:Property Key="_EditMenuTableStart2" Value="11" />
+              <pnp:Property Key="_EditMenuTableEnd" Value="11" />
+              <pnp:Property Key="LinkFilenameNoMenu" Value="workflow.xaml" />
+              <pnp:Property Key="LinkFilename" Value="workflow.xaml" />
+              <pnp:Property Key="LinkFilename2" Value="workflow.xaml" />
+              <pnp:Property Key="DocIcon" Value="xaml" />
+              <pnp:Property Key="ServerUrl" Value="/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7/workflow.xaml" />
+              <pnp:Property Key="EncodedAbsUrl" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7/workflow.xaml" />
+              <pnp:Property Key="BaseName" Value="workflow" />
+              <pnp:Property Key="FileSizeDisplay" Value="19772" />
+              <pnp:Property Key="MetaInfo" Value="SPDConfig.StartManually:SW|true&#xD;&#xA;vti_parserversion:SR|16.0.0.6614&#xD;&#xA;WSDescription:SW|Sample workflow to manage a Request to Access Personal Data&#xD;&#xA;IsProjectMode:SW|false&#xD;&#xA;WSGUID:SW|ef2f50ba-7a12-4f34-9e97-35cd6de3d4b7&#xD;&#xA;WSDisplayName:SW|Request to Access Personal Data Management&#xD;&#xA;WSPublishState:IW|3&#xD;&#xA;vti_author:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_dbschemaversion:SR|16.0.130.0&#xD;&#xA;vti_sprocsschemaversion:SR|16.0.220.0&#xD;&#xA;SPDConfig.StartOnChange:SW|false&#xD;&#xA;AutosetStatusToStageName:SW|true&#xD;&#xA;SubscriptionName:SW|Request to Access Personal Data Management&#xD;&#xA;vti_writevalidationtoken:SW|sjUsVEZRBZDUQgJzJDR9VS8kYtA=&#xD;&#xA;RestrictToScope:SW|DAA1DFEC-C9E4-42EA-8006-765B67A8BE7D&#xD;&#xA;RestrictToType:SW|List&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;HistoryListId:SW|{F73EAC3F-6848-4D9B-A65A-EB77BD92E142}&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;ContentTypeId:SW|0x01002A2479FF33DD4BC3B1533A012B653717003839EAFC0FDDEA408D70C52B8A9A2612&#xD;&#xA;SPDConfig.StartOnCreate:SW|true&#xD;&#xA;FileLeafRef:SW|workflow.xaml&#xD;&#xA;RequiresInitiationForm:SW|false&#xD;&#xA;InitiationUrl:SW|&#xD;&#xA;SubscriptionId:SW|{2116AE9E-AB64-4F4B-838B-3964B460F50D}&#xD;&#xA;FormField:SW|&lt;Fields /&gt;&#xD;&#xA;TaskListId:SW|{B6425E6C-4088-4EB3-B17D-AAF79433C741}&#xD;&#xA;SPDConfig.LastEditMode:SW|TextBased&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;isReusable:SW|false&#xD;&#xA;" />
+              <pnp:Property Key="_Level" Value="1" />
+              <pnp:Property Key="_IsCurrentVersion" Value="True" />
+              <pnp:Property Key="ItemChildCount" Value="0" />
+              <pnp:Property Key="FolderChildCount" Value="0" />
+              <pnp:Property Key="Restricted" Value="" />
+              <pnp:Property Key="OriginatorId" Value="" />
+              <pnp:Property Key="NoExecute" Value="1" />
+              <pnp:Property Key="ContentVersion" Value="3" />
+              <pnp:Property Key="_ComplianceFlags" Value="" />
+              <pnp:Property Key="_ComplianceTag" Value="" />
+              <pnp:Property Key="_ComplianceTagWrittenTime" Value="" />
+              <pnp:Property Key="_ComplianceTagUserId" Value="" />
+              <pnp:Property Key="BSN" Value="202" />
+              <pnp:Property Key="_ListSchemaVersion" Value="" />
+              <pnp:Property Key="_Dirty" Value="0" />
+              <pnp:Property Key="_Parsable" Value="0" />
+              <pnp:Property Key="AccessPolicy" Value="" />
+              <pnp:Property Key="SMTotalSize" Value="142151" />
+              <pnp:Property Key="SMLastModifiedDate" Value="2017-06-27 08:52:59" />
+              <pnp:Property Key="SMTotalFileStreamSize" Value="19772" />
+              <pnp:Property Key="SMTotalFileCount" Value="1" />
+              <pnp:Property Key="SelectTitle" Value="11" />
+              <pnp:Property Key="SelectFilename" Value="11" />
+              <pnp:Property Key="Edit" Value="0" />
+              <pnp:Property Key="owshiddenversion" Value="7" />
+              <pnp:Property Key="_UIVersion" Value="3584" />
+              <pnp:Property Key="_UIVersionString" Value="7.0" />
+              <pnp:Property Key="Order" Value="1100" />
+              <pnp:Property Key="GUID" Value="{3A3E2FC0-CCAC-45FC-BEF3-06EDC7019792}" />
+              <pnp:Property Key="WorkflowVersion" Value="1" />
+              <pnp:Property Key="ParentVersionString" Value="11;#" />
+              <pnp:Property Key="ParentLeafName" Value="11;#" />
+              <pnp:Property Key="DocConcurrencyNumber" Value="7" />
+              <pnp:Property Key="ParentUniqueId" Value="{D240DECB-7C01-48EE-A170-BC9BA590DAE9}" />
+              <pnp:Property Key="StreamHash" Value="0x02B2352C5446510590D442027324347D552F2462D0" />
+              <pnp:Property Key="ModifiedBy" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+            </pnp:Properties>
+            <pnp:FormField>
+              <Fields />
+            </pnp:FormField>
+          </pnp:WorkflowDefinition>
+        </pnp:WorkflowDefinitions>
+        <pnp:WorkflowSubscriptions>
+          <pnp:WorkflowSubscription DefinitionId="ac552ede-9be6-4905-8264-b07f8fa0cc44" ListId="{listid:Events}" Enabled="true" EventSourceId="{listid:Events}" WorkflowStartEvent="true" ItemAddedEvent="true" ItemUpdatedEvent="false" ManualStartBypassesActivationLimit="false" Name="Data Breach Management" ParentContentTypeId="" StatusFieldName="Data_x0020_Breach_x0020_Manageme">
+            <pnp:PropertyDefinitions>
+              <pnp:PropertyDefinition Key="StatusColumnCreated" Value="1" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ListId" Value="4e006c08-c0ab-4f71-b94a-b58fc15578c3" />
+              <pnp:PropertyDefinition Key="vti_privatelistexempt" Value="true" />
+              <pnp:PropertyDefinition Key="WSPublishState" Value="3" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EventSourceId" Value="4e006c08-c0ab-4f71-b94a-b58fc15578c3" />
+              <pnp:PropertyDefinition Key="HistoryListId" Value="{listid:Workflow History}" />
+              <pnp:PropertyDefinition Key="CurrentWebUri" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EventType" Value="WorkflowStart#;ItemAdded#;" />
+              <pnp:PropertyDefinition Key="vti_modifiedby" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="StatusFieldName" Value="Data_x0020_Breach_x0020_Manageme" />
+              <pnp:PropertyDefinition Key="CreatedBySPD" Value="1" />
+              <pnp:PropertyDefinition Key="vti_parserversion" Value="16.0.0.6614" />
+              <pnp:PropertyDefinition Key="vti_author" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="vti_foldersubfolderitemcount" Value="0" />
+              <pnp:PropertyDefinition Key="vti_writevalidationtoken" Value="AAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.DisplayName" Value="Data Breach Management" />
+              <pnp:PropertyDefinition Key="WSEnabled" Value="true" />
+              <pnp:PropertyDefinition Key="WSEventContextKeys" Value="StatusColumnCreated;#WorkflowService&#xD;&#xA;CreatedBySPD;#WorkflowService&#xD;&#xA;CurrentWebUri;#WorkflowService&#xD;&#xA;HistoryListId;#WorkflowService&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.SiteId;#WorkflowService&#xD;&#xA;TaskListId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ParentContentTypeId;#Instance&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.WebId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListName;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.CurrentItemUrl;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ItemId;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ItemGuid;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.UniqueId;#Instance&#xD;&#xA;StatusFieldName;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.RelatedItems;#Instance&#xD;&#xA;" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ParentContentTypeId" Value="" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.ActivationProperties.SiteId" Value="D522D893-B543-4961-BF9B-C4932CBF99BC" />
+              <pnp:PropertyDefinition Key="vti_folderitemcount" Value="0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Id" Value="e582b86a-54ca-4793-9271-aa57a6beae56" />
+              <pnp:PropertyDefinition Key="TaskListId" Value="{listid:Tasks}" />
+              <pnp:PropertyDefinition Key="ModifiedBy" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="ContentTypeId" Value="0x0100AA27A923036E459D9EF0D18BBD0B958700ACFEFDF42AE4A04099C4857626702EF1" />
+              <pnp:PropertyDefinition Key="vti_dbschemaversion" Value="16.0.130.0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Name" Value="WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="Order" Value="600.000000000000" />
+              <pnp:PropertyDefinition Key="vti_sprocsschemaversion" Value="16.0.220.0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.ActivationProperties.WebId" Value="FD9745CF-C7FD-4C4B-83B8-888304CEDDA4" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ListName" Value="Events" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ListItemId" Value="6" />
+              <pnp:PropertyDefinition Key="ContentType" Value="WorkflowServiceSubscription" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.CreatedDate" Value="6/27/2017 6:54:09 AM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.AuthorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ModifiedDate" Value="6/27/2017 7:48:00 AM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EditorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:PropertyDefinition Key="_ModerationStatus" Value="0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.FullName" Value="/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44/WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Path" Value="/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ModifiedDateUTC" Value="6/27/2017 2:48:01 PM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.CreatedDateUTC" Value="6/27/2017 1:54:09 PM" />
+              <pnp:PropertyDefinition Key="File_x0020_Size" Value="0" />
+              <pnp:PropertyDefinition Key="FSObjType" Value="0" />
+              <pnp:PropertyDefinition Key="SortBehavior" Value="6;#0" />
+              <pnp:PropertyDefinition Key="PermMask" Value="0x7ffffffffffbffff" />
+              <pnp:PropertyDefinition Key="CheckedOutUserId" Value="6;#" />
+              <pnp:PropertyDefinition Key="IsCheckedoutToLocal" Value="0" />
+              <pnp:PropertyDefinition Key="UniqueId" Value="748f27f9-44f2-4804-b297-0e7e4c33c4b3" />
+              <pnp:PropertyDefinition Key="SyncClientId" Value="6;#" />
+              <pnp:PropertyDefinition Key="ProgId" Value="" />
+              <pnp:PropertyDefinition Key="ScopeId" Value="{E1C2A6A7-A384-4493-BDF9-44994ADEFE2F}" />
+              <pnp:PropertyDefinition Key="VirusStatus" Value="6;#0" />
+              <pnp:PropertyDefinition Key="CheckedOutTitle" Value="6;#" />
+              <pnp:PropertyDefinition Key="_CheckinComment" Value="" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EditorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.AuthorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="_EditMenuTableStart" Value="WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="_EditMenuTableStart2" Value="6" />
+              <pnp:PropertyDefinition Key="_EditMenuTableEnd" Value="6" />
+              <pnp:PropertyDefinition Key="LinkFilenameNoMenu" Value="WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="LinkFilename" Value="WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="LinkFilename2" Value="WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="ServerUrl" Value="/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44/WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="EncodedAbsUrl" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA/wfsvc/ac552ede9be649058264b07f8fa0cc44/WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="BaseName" Value="WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f" />
+              <pnp:PropertyDefinition Key="FileSizeDisplay" Value="0" />
+              <pnp:PropertyDefinition Key="MetaInfo" Value="vti_parserversion:SR|16.0.0.6614&#xD;&#xA;Order:DW|600.000000000000&#xD;&#xA;WSGUID:SW|e582b86a-54ca-4793-9271-aa57a6beae56&#xD;&#xA;WSDisplayName:SW|Data Breach Management&#xD;&#xA;WSEnabled:BW|true&#xD;&#xA;WSPublishState:IW|3&#xD;&#xA;vti_author:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_sprocsschemaversion:SR|16.0.220.0&#xD;&#xA;vti_dbschemaversion:SR|16.0.130.0&#xD;&#xA;vti_writevalidationtoken:SW|AAAAAAAAAAAAAAAAAAAAAAAAAAA=&#xD;&#xA;HistoryListId:SW|F73EAC3F-6848-4D9B-A65A-EB77BD92E142&#xD;&#xA;WSEventSourceGUID:SW|4e006c08-c0ab-4f71-b94a-b58fc15578c3&#xD;&#xA;WSEventType:SW|WorkflowStart#;ItemAdded#;&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListId:SW|4e006c08-c0ab-4f71-b94a-b58fc15578c3&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;FileLeafRef:SW|WorkflowAssociation_cbc990a34f984510ae95fc0bc525df8f&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListName:SW|Events&#xD;&#xA;WSEventContextKeys:SW|StatusColumnCreated;#WorkflowService\r\nCreatedBySPD;#WorkflowService\r\nCurrentWebUri;#WorkflowService\r\nHistoryListId;#WorkflowService\r\nSharePointWorkflowContext.ActivationProperties.SiteId;#WorkflowService\r\nTaskListId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ParentContentTypeId;#Instance\r\nSharePointWorkflowContext.ActivationProperties.WebId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ListId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ListName;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.CurrentItemUrl;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.ItemId;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.ItemGuid;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.UniqueId;#Instance\r\nStatusFieldName;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.RelatedItems;#Instance\r\n&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ParentContentTypeId:SW|&#xD;&#xA;ContentTypeId:SW|0x0100AA27A923036E459D9EF0D18BBD0B958700ACFEFDF42AE4A04099C4857626702EF1&#xD;&#xA;ModifiedBy:SW|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;StatusColumnCreated:SW|1&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.WebId:SW|FD9745CF-C7FD-4C4B-83B8-888304CEDDA4&#xD;&#xA;CurrentWebUri:SW|https://mstnd677827.sharepoint.com/sites/GDPRIA&#xD;&#xA;TaskListId:SW|B6425E6C-4088-4EB3-B17D-AAF79433C741&#xD;&#xA;StatusFieldName:SW|Data_x0020_Breach_x0020_Manageme&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.SiteId:SW|D522D893-B543-4961-BF9B-C4932CBF99BC&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;CreatedBySPD:SW|1&#xD;&#xA;" />
+              <pnp:PropertyDefinition Key="_Level" Value="1" />
+              <pnp:PropertyDefinition Key="_IsCurrentVersion" Value="True" />
+              <pnp:PropertyDefinition Key="ItemChildCount" Value="0" />
+              <pnp:PropertyDefinition Key="FolderChildCount" Value="0" />
+              <pnp:PropertyDefinition Key="Restricted" Value="" />
+              <pnp:PropertyDefinition Key="OriginatorId" Value="" />
+              <pnp:PropertyDefinition Key="NoExecute" Value="1" />
+              <pnp:PropertyDefinition Key="ContentVersion" Value="1" />
+              <pnp:PropertyDefinition Key="_ComplianceFlags" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTag" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTagWrittenTime" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTagUserId" Value="" />
+              <pnp:PropertyDefinition Key="BSN" Value="150" />
+              <pnp:PropertyDefinition Key="_ListSchemaVersion" Value="" />
+              <pnp:PropertyDefinition Key="_Dirty" Value="0" />
+              <pnp:PropertyDefinition Key="_Parsable" Value="0" />
+              <pnp:PropertyDefinition Key="AccessPolicy" Value="" />
+              <pnp:PropertyDefinition Key="SMTotalSize" Value="1071" />
+              <pnp:PropertyDefinition Key="SMLastModifiedDate" Value="2017-06-27 07:48:01" />
+              <pnp:PropertyDefinition Key="SMTotalFileStreamSize" Value="0" />
+              <pnp:PropertyDefinition Key="SMTotalFileCount" Value="1" />
+              <pnp:PropertyDefinition Key="SelectTitle" Value="6" />
+              <pnp:PropertyDefinition Key="SelectFilename" Value="6" />
+              <pnp:PropertyDefinition Key="Edit" Value="0" />
+              <pnp:PropertyDefinition Key="owshiddenversion" Value="14" />
+              <pnp:PropertyDefinition Key="_UIVersion" Value="512" />
+              <pnp:PropertyDefinition Key="_UIVersionString" Value="1.0" />
+              <pnp:PropertyDefinition Key="GUID" Value="{2F17B72B-C1D5-4AFB-82E6-6817A68520C8}" />
+              <pnp:PropertyDefinition Key="WorkflowVersion" Value="1" />
+              <pnp:PropertyDefinition Key="ParentVersionString" Value="6;#" />
+              <pnp:PropertyDefinition Key="ParentLeafName" Value="6;#" />
+              <pnp:PropertyDefinition Key="DocConcurrencyNumber" Value="14" />
+              <pnp:PropertyDefinition Key="ParentUniqueId" Value="{366D6A47-9C93-4EC4-A06F-539C797573D3}" />
+              <pnp:PropertyDefinition Key="StreamHash" Value="0x020000000000000000000000000000000000000000" />
+            </pnp:PropertyDefinitions>
+          </pnp:WorkflowSubscription>
+          <pnp:WorkflowSubscription DefinitionId="e8d4ef94-75ef-4d39-883d-c6661f768ac7" ListId="{listid:Events}" Enabled="true" EventSourceId="{listid:Events}" WorkflowStartEvent="true" ItemAddedEvent="true" ItemUpdatedEvent="false" ManualStartBypassesActivationLimit="false" Name="External Data Processing" ParentContentTypeId="" StatusFieldName="External_x0020_Data_x0020_Proces">
+            <pnp:PropertyDefinitions>
+              <pnp:PropertyDefinition Key="StatusColumnCreated" Value="1" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ListId" Value="4e006c08-c0ab-4f71-b94a-b58fc15578c3" />
+              <pnp:PropertyDefinition Key="vti_privatelistexempt" Value="true" />
+              <pnp:PropertyDefinition Key="WSPublishState" Value="3" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EventSourceId" Value="4e006c08-c0ab-4f71-b94a-b58fc15578c3" />
+              <pnp:PropertyDefinition Key="HistoryListId" Value="{listid:Workflow History}" />
+              <pnp:PropertyDefinition Key="CurrentWebUri" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EventType" Value="WorkflowStart#;ItemAdded#;" />
+              <pnp:PropertyDefinition Key="vti_modifiedby" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="StatusFieldName" Value="External_x0020_Data_x0020_Proces" />
+              <pnp:PropertyDefinition Key="CreatedBySPD" Value="1" />
+              <pnp:PropertyDefinition Key="vti_parserversion" Value="16.0.0.6614" />
+              <pnp:PropertyDefinition Key="vti_author" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="vti_foldersubfolderitemcount" Value="0" />
+              <pnp:PropertyDefinition Key="vti_writevalidationtoken" Value="AAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.DisplayName" Value="External Data Processing" />
+              <pnp:PropertyDefinition Key="WSEnabled" Value="true" />
+              <pnp:PropertyDefinition Key="WSEventContextKeys" Value="StatusColumnCreated;#WorkflowService&#xD;&#xA;CreatedBySPD;#WorkflowService&#xD;&#xA;CurrentWebUri;#WorkflowService&#xD;&#xA;HistoryListId;#WorkflowService&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.SiteId;#WorkflowService&#xD;&#xA;TaskListId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ParentContentTypeId;#Instance&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.WebId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListName;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.CurrentItemUrl;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ItemId;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ItemGuid;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.UniqueId;#Instance&#xD;&#xA;StatusFieldName;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.RelatedItems;#Instance&#xD;&#xA;" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ParentContentTypeId" Value="" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.ActivationProperties.SiteId" Value="D522D893-B543-4961-BF9B-C4932CBF99BC" />
+              <pnp:PropertyDefinition Key="vti_folderitemcount" Value="0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Id" Value="5ca85a79-d9e5-4fd4-97be-4924382b15bb" />
+              <pnp:PropertyDefinition Key="TaskListId" Value="{listid:Tasks}" />
+              <pnp:PropertyDefinition Key="ModifiedBy" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="ContentTypeId" Value="0x0100AA27A923036E459D9EF0D18BBD0B958700ACFEFDF42AE4A04099C4857626702EF1" />
+              <pnp:PropertyDefinition Key="vti_dbschemaversion" Value="16.0.130.0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Name" Value="WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="Order" Value="900.000000000000" />
+              <pnp:PropertyDefinition Key="vti_sprocsschemaversion" Value="16.0.220.0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.ActivationProperties.WebId" Value="FD9745CF-C7FD-4C4B-83B8-888304CEDDA4" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ListName" Value="Events" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ListItemId" Value="9" />
+              <pnp:PropertyDefinition Key="ContentType" Value="WorkflowServiceSubscription" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.CreatedDate" Value="6/27/2017 7:34:51 AM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.AuthorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ModifiedDate" Value="6/27/2017 7:46:55 AM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EditorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:PropertyDefinition Key="_ModerationStatus" Value="0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.FullName" Value="/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7/WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Path" Value="/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ModifiedDateUTC" Value="6/27/2017 2:46:54 PM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.CreatedDateUTC" Value="6/27/2017 2:34:51 PM" />
+              <pnp:PropertyDefinition Key="File_x0020_Size" Value="0" />
+              <pnp:PropertyDefinition Key="FSObjType" Value="0" />
+              <pnp:PropertyDefinition Key="SortBehavior" Value="9;#0" />
+              <pnp:PropertyDefinition Key="PermMask" Value="0x7ffffffffffbffff" />
+              <pnp:PropertyDefinition Key="CheckedOutUserId" Value="9;#" />
+              <pnp:PropertyDefinition Key="IsCheckedoutToLocal" Value="0" />
+              <pnp:PropertyDefinition Key="UniqueId" Value="d8ef4252-455d-421e-a133-a540076e6186" />
+              <pnp:PropertyDefinition Key="SyncClientId" Value="9;#" />
+              <pnp:PropertyDefinition Key="ProgId" Value="" />
+              <pnp:PropertyDefinition Key="ScopeId" Value="{E1C2A6A7-A384-4493-BDF9-44994ADEFE2F}" />
+              <pnp:PropertyDefinition Key="VirusStatus" Value="9;#0" />
+              <pnp:PropertyDefinition Key="CheckedOutTitle" Value="9;#" />
+              <pnp:PropertyDefinition Key="_CheckinComment" Value="" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EditorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.AuthorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="_EditMenuTableStart" Value="WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="_EditMenuTableStart2" Value="9" />
+              <pnp:PropertyDefinition Key="_EditMenuTableEnd" Value="9" />
+              <pnp:PropertyDefinition Key="LinkFilenameNoMenu" Value="WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="LinkFilename" Value="WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="LinkFilename2" Value="WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="ServerUrl" Value="/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7/WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="EncodedAbsUrl" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA/wfsvc/e8d4ef9475ef4d39883dc6661f768ac7/WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="BaseName" Value="WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621" />
+              <pnp:PropertyDefinition Key="FileSizeDisplay" Value="0" />
+              <pnp:PropertyDefinition Key="MetaInfo" Value="vti_parserversion:SR|16.0.0.6614&#xD;&#xA;Order:DW|900.000000000000&#xD;&#xA;WSGUID:SW|5ca85a79-d9e5-4fd4-97be-4924382b15bb&#xD;&#xA;WSDisplayName:SW|External Data Processing&#xD;&#xA;WSEnabled:BW|true&#xD;&#xA;WSPublishState:IW|3&#xD;&#xA;vti_author:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_sprocsschemaversion:SR|16.0.220.0&#xD;&#xA;vti_dbschemaversion:SR|16.0.130.0&#xD;&#xA;vti_writevalidationtoken:SW|AAAAAAAAAAAAAAAAAAAAAAAAAAA=&#xD;&#xA;HistoryListId:SW|F73EAC3F-6848-4D9B-A65A-EB77BD92E142&#xD;&#xA;WSEventSourceGUID:SW|4e006c08-c0ab-4f71-b94a-b58fc15578c3&#xD;&#xA;WSEventType:SW|WorkflowStart#;ItemAdded#;&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListId:SW|4e006c08-c0ab-4f71-b94a-b58fc15578c3&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;FileLeafRef:SW|WorkflowAssociation_936dc2e11c3f42fb9fe05c8786eff621&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListName:SW|Events&#xD;&#xA;WSEventContextKeys:SW|StatusColumnCreated;#WorkflowService\r\nCreatedBySPD;#WorkflowService\r\nCurrentWebUri;#WorkflowService\r\nHistoryListId;#WorkflowService\r\nSharePointWorkflowContext.ActivationProperties.SiteId;#WorkflowService\r\nTaskListId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ParentContentTypeId;#Instance\r\nSharePointWorkflowContext.ActivationProperties.WebId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ListId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ListName;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.CurrentItemUrl;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.ItemId;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.ItemGuid;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.UniqueId;#Instance\r\nStatusFieldName;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.RelatedItems;#Instance\r\n&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ParentContentTypeId:SW|&#xD;&#xA;ContentTypeId:SW|0x0100AA27A923036E459D9EF0D18BBD0B958700ACFEFDF42AE4A04099C4857626702EF1&#xD;&#xA;ModifiedBy:SW|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;StatusColumnCreated:SW|1&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.WebId:SW|FD9745CF-C7FD-4C4B-83B8-888304CEDDA4&#xD;&#xA;CurrentWebUri:SW|https://mstnd677827.sharepoint.com/sites/GDPRIA&#xD;&#xA;TaskListId:SW|B6425E6C-4088-4EB3-B17D-AAF79433C741&#xD;&#xA;StatusFieldName:SW|External_x0020_Data_x0020_Proces&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.SiteId:SW|D522D893-B543-4961-BF9B-C4932CBF99BC&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;CreatedBySPD:SW|1&#xD;&#xA;" />
+              <pnp:PropertyDefinition Key="_Level" Value="1" />
+              <pnp:PropertyDefinition Key="_IsCurrentVersion" Value="True" />
+              <pnp:PropertyDefinition Key="ItemChildCount" Value="0" />
+              <pnp:PropertyDefinition Key="FolderChildCount" Value="0" />
+              <pnp:PropertyDefinition Key="Restricted" Value="" />
+              <pnp:PropertyDefinition Key="OriginatorId" Value="" />
+              <pnp:PropertyDefinition Key="NoExecute" Value="1" />
+              <pnp:PropertyDefinition Key="ContentVersion" Value="1" />
+              <pnp:PropertyDefinition Key="_ComplianceFlags" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTag" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTagWrittenTime" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTagUserId" Value="" />
+              <pnp:PropertyDefinition Key="BSN" Value="150" />
+              <pnp:PropertyDefinition Key="_ListSchemaVersion" Value="" />
+              <pnp:PropertyDefinition Key="_Dirty" Value="0" />
+              <pnp:PropertyDefinition Key="_Parsable" Value="0" />
+              <pnp:PropertyDefinition Key="AccessPolicy" Value="" />
+              <pnp:PropertyDefinition Key="SMTotalSize" Value="1072" />
+              <pnp:PropertyDefinition Key="SMLastModifiedDate" Value="2017-06-27 07:46:54" />
+              <pnp:PropertyDefinition Key="SMTotalFileStreamSize" Value="0" />
+              <pnp:PropertyDefinition Key="SMTotalFileCount" Value="1" />
+              <pnp:PropertyDefinition Key="SelectTitle" Value="9" />
+              <pnp:PropertyDefinition Key="SelectFilename" Value="9" />
+              <pnp:PropertyDefinition Key="Edit" Value="0" />
+              <pnp:PropertyDefinition Key="owshiddenversion" Value="6" />
+              <pnp:PropertyDefinition Key="_UIVersion" Value="512" />
+              <pnp:PropertyDefinition Key="_UIVersionString" Value="1.0" />
+              <pnp:PropertyDefinition Key="GUID" Value="{AC916502-7B06-4C4C-97CE-5C56A6298C1F}" />
+              <pnp:PropertyDefinition Key="WorkflowVersion" Value="1" />
+              <pnp:PropertyDefinition Key="ParentVersionString" Value="9;#" />
+              <pnp:PropertyDefinition Key="ParentLeafName" Value="9;#" />
+              <pnp:PropertyDefinition Key="DocConcurrencyNumber" Value="6" />
+              <pnp:PropertyDefinition Key="ParentUniqueId" Value="{107DE18F-6DC9-44FB-8472-3FD1D45C9345}" />
+              <pnp:PropertyDefinition Key="StreamHash" Value="0x020000000000000000000000000000000000000000" />
+            </pnp:PropertyDefinitions>
+          </pnp:WorkflowSubscription>
+          <pnp:WorkflowSubscription DefinitionId="ef2f50ba-7a12-4f34-9e97-35cd6de3d4b7" ListId="{listid:Requests}" Enabled="true" EventSourceId="{listid:Requests}" WorkflowStartEvent="true" ItemAddedEvent="true" ItemUpdatedEvent="false" ManualStartBypassesActivationLimit="false" Name="Request to Access Personal Data Management" ParentContentTypeId="" StatusFieldName="Request_x0020_to_x0020_Access_x0">
+            <pnp:PropertyDefinitions>
+              <pnp:PropertyDefinition Key="StatusColumnCreated" Value="1" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ListId" Value="daa1dfec-c9e4-42ea-8006-765b67a8be7d" />
+              <pnp:PropertyDefinition Key="vti_privatelistexempt" Value="true" />
+              <pnp:PropertyDefinition Key="WSPublishState" Value="3" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EventSourceId" Value="daa1dfec-c9e4-42ea-8006-765b67a8be7d" />
+              <pnp:PropertyDefinition Key="HistoryListId" Value="{listid:Workflow History}" />
+              <pnp:PropertyDefinition Key="CurrentWebUri" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EventType" Value="WorkflowStart#;ItemAdded#;" />
+              <pnp:PropertyDefinition Key="vti_modifiedby" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="StatusFieldName" Value="Request_x0020_to_x0020_Access_x0" />
+              <pnp:PropertyDefinition Key="CreatedBySPD" Value="1" />
+              <pnp:PropertyDefinition Key="vti_parserversion" Value="16.0.0.6614" />
+              <pnp:PropertyDefinition Key="vti_author" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="vti_foldersubfolderitemcount" Value="0" />
+              <pnp:PropertyDefinition Key="vti_writevalidationtoken" Value="AAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.DisplayName" Value="Request to Access Personal Data Management" />
+              <pnp:PropertyDefinition Key="WSEnabled" Value="true" />
+              <pnp:PropertyDefinition Key="WSEventContextKeys" Value="StatusColumnCreated;#WorkflowService&#xD;&#xA;CreatedBySPD;#WorkflowService&#xD;&#xA;CurrentWebUri;#WorkflowService&#xD;&#xA;HistoryListId;#WorkflowService&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.SiteId;#WorkflowService&#xD;&#xA;TaskListId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ParentContentTypeId;#Instance&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.WebId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListId;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListName;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.CurrentItemUrl;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ItemId;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ItemGuid;#Instance&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.UniqueId;#Instance&#xD;&#xA;StatusFieldName;#WorkflowService&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.RelatedItems;#Instance&#xD;&#xA;" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ParentContentTypeId" Value="" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.ActivationProperties.SiteId" Value="D522D893-B543-4961-BF9B-C4932CBF99BC" />
+              <pnp:PropertyDefinition Key="vti_folderitemcount" Value="0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Id" Value="2116ae9e-ab64-4f4b-838b-3964b460f50d" />
+              <pnp:PropertyDefinition Key="TaskListId" Value="{listid:Tasks}" />
+              <pnp:PropertyDefinition Key="ModifiedBy" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="ContentTypeId" Value="0x0100AA27A923036E459D9EF0D18BBD0B958700ACFEFDF42AE4A04099C4857626702EF1" />
+              <pnp:PropertyDefinition Key="vti_dbschemaversion" Value="16.0.130.0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Name" Value="WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="Order" Value="1200.00000000000" />
+              <pnp:PropertyDefinition Key="vti_sprocsschemaversion" Value="16.0.220.0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.ActivationProperties.WebId" Value="FD9745CF-C7FD-4C4B-83B8-888304CEDDA4" />
+              <pnp:PropertyDefinition Key="Microsoft.SharePoint.ActivationProperties.ListName" Value="Requests" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ListItemId" Value="12" />
+              <pnp:PropertyDefinition Key="ContentType" Value="WorkflowServiceSubscription" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.CreatedDate" Value="6/27/2017 8:52:21 AM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.AuthorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ModifiedDate" Value="6/27/2017 8:53:02 AM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EditorId" Value="6;#MOD Administrator,#i:0#.f|membership|admin@mstnd677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#admin@MSTND677827.onmicrosoft.com,#MOD Administrator" />
+              <pnp:PropertyDefinition Key="_ModerationStatus" Value="0" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.FullName" Value="/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7/WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.Path" Value="/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.ModifiedDateUTC" Value="6/27/2017 3:53:02 PM" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.CreatedDateUTC" Value="6/27/2017 3:52:21 PM" />
+              <pnp:PropertyDefinition Key="File_x0020_Size" Value="0" />
+              <pnp:PropertyDefinition Key="FSObjType" Value="0" />
+              <pnp:PropertyDefinition Key="SortBehavior" Value="12;#0" />
+              <pnp:PropertyDefinition Key="PermMask" Value="0x7ffffffffffbffff" />
+              <pnp:PropertyDefinition Key="CheckedOutUserId" Value="12;#" />
+              <pnp:PropertyDefinition Key="IsCheckedoutToLocal" Value="0" />
+              <pnp:PropertyDefinition Key="UniqueId" Value="5d43bcbe-c03f-4a35-9cc6-a5ea18d5dadc" />
+              <pnp:PropertyDefinition Key="SyncClientId" Value="12;#" />
+              <pnp:PropertyDefinition Key="ProgId" Value="" />
+              <pnp:PropertyDefinition Key="ScopeId" Value="{E1C2A6A7-A384-4493-BDF9-44994ADEFE2F}" />
+              <pnp:PropertyDefinition Key="VirusStatus" Value="12;#0" />
+              <pnp:PropertyDefinition Key="CheckedOutTitle" Value="12;#" />
+              <pnp:PropertyDefinition Key="_CheckinComment" Value="" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.EditorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="SharePointWorkflowContext.Subscription.AuthorLogin" Value="i:0#.f|membership|admin@mstnd677827.onmicrosoft.com" />
+              <pnp:PropertyDefinition Key="_EditMenuTableStart" Value="WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="_EditMenuTableStart2" Value="12" />
+              <pnp:PropertyDefinition Key="_EditMenuTableEnd" Value="12" />
+              <pnp:PropertyDefinition Key="LinkFilenameNoMenu" Value="WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="LinkFilename" Value="WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="LinkFilename2" Value="WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="ServerUrl" Value="/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7/WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="EncodedAbsUrl" Value="https://mstnd677827.sharepoint.com/sites/GDPRIA/wfsvc/ef2f50ba7a124f349e9735cd6de3d4b7/WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="BaseName" Value="WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e" />
+              <pnp:PropertyDefinition Key="FileSizeDisplay" Value="0" />
+              <pnp:PropertyDefinition Key="MetaInfo" Value="vti_parserversion:SR|16.0.0.6614&#xD;&#xA;Order:DW|1200.00000000000&#xD;&#xA;WSGUID:SW|2116ae9e-ab64-4f4b-838b-3964b460f50d&#xD;&#xA;WSDisplayName:SW|Request to Access Personal Data Management&#xD;&#xA;WSEnabled:BW|true&#xD;&#xA;WSPublishState:IW|3&#xD;&#xA;vti_author:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_sprocsschemaversion:SR|16.0.220.0&#xD;&#xA;vti_dbschemaversion:SR|16.0.130.0&#xD;&#xA;vti_writevalidationtoken:SW|AAAAAAAAAAAAAAAAAAAAAAAAAAA=&#xD;&#xA;HistoryListId:SW|F73EAC3F-6848-4D9B-A65A-EB77BD92E142&#xD;&#xA;WSEventSourceGUID:SW|daa1dfec-c9e4-42ea-8006-765b67a8be7d&#xD;&#xA;WSEventType:SW|WorkflowStart#;ItemAdded#;&#xD;&#xA;vti_modifiedby:SR|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListId:SW|daa1dfec-c9e4-42ea-8006-765b67a8be7d&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;FileLeafRef:SW|WorkflowAssociation_3d24411f2e2c45c8914bdfe03219631e&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ListName:SW|Requests&#xD;&#xA;WSEventContextKeys:SW|StatusColumnCreated;#WorkflowService\r\nCreatedBySPD;#WorkflowService\r\nCurrentWebUri;#WorkflowService\r\nHistoryListId;#WorkflowService\r\nSharePointWorkflowContext.ActivationProperties.SiteId;#WorkflowService\r\nTaskListId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ParentContentTypeId;#Instance\r\nSharePointWorkflowContext.ActivationProperties.WebId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ListId;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.ListName;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.CurrentItemUrl;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.ItemId;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.ItemGuid;#Instance\r\nMicrosoft.SharePoint.ActivationProperties.UniqueId;#Instance\r\nStatusFieldName;#WorkflowService\r\nMicrosoft.SharePoint.ActivationProperties.RelatedItems;#Instance\r\n&#xD;&#xA;Microsoft.SharePoint.ActivationProperties.ParentContentTypeId:SW|&#xD;&#xA;ContentTypeId:SW|0x0100AA27A923036E459D9EF0D18BBD0B958700ACFEFDF42AE4A04099C4857626702EF1&#xD;&#xA;ModifiedBy:SW|i:0#.f|membership|admin@mstnd677827.onmicrosoft.com&#xD;&#xA;StatusColumnCreated:SW|1&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.WebId:SW|FD9745CF-C7FD-4C4B-83B8-888304CEDDA4&#xD;&#xA;CurrentWebUri:SW|https://mstnd677827.sharepoint.com/sites/GDPRIA&#xD;&#xA;TaskListId:SW|B6425E6C-4088-4EB3-B17D-AAF79433C741&#xD;&#xA;StatusFieldName:SW|Request_x0020_to_x0020_Access_x0&#xD;&#xA;SharePointWorkflowContext.ActivationProperties.SiteId:SW|D522D893-B543-4961-BF9B-C4932CBF99BC&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;CreatedBySPD:SW|1&#xD;&#xA;" />
+              <pnp:PropertyDefinition Key="_Level" Value="1" />
+              <pnp:PropertyDefinition Key="_IsCurrentVersion" Value="True" />
+              <pnp:PropertyDefinition Key="ItemChildCount" Value="0" />
+              <pnp:PropertyDefinition Key="FolderChildCount" Value="0" />
+              <pnp:PropertyDefinition Key="Restricted" Value="" />
+              <pnp:PropertyDefinition Key="OriginatorId" Value="" />
+              <pnp:PropertyDefinition Key="NoExecute" Value="1" />
+              <pnp:PropertyDefinition Key="ContentVersion" Value="1" />
+              <pnp:PropertyDefinition Key="_ComplianceFlags" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTag" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTagWrittenTime" Value="" />
+              <pnp:PropertyDefinition Key="_ComplianceTagUserId" Value="" />
+              <pnp:PropertyDefinition Key="BSN" Value="150" />
+              <pnp:PropertyDefinition Key="_ListSchemaVersion" Value="" />
+              <pnp:PropertyDefinition Key="_Dirty" Value="0" />
+              <pnp:PropertyDefinition Key="_Parsable" Value="0" />
+              <pnp:PropertyDefinition Key="AccessPolicy" Value="" />
+              <pnp:PropertyDefinition Key="SMTotalSize" Value="1083" />
+              <pnp:PropertyDefinition Key="SMLastModifiedDate" Value="2017-06-27 08:53:02" />
+              <pnp:PropertyDefinition Key="SMTotalFileStreamSize" Value="0" />
+              <pnp:PropertyDefinition Key="SMTotalFileCount" Value="1" />
+              <pnp:PropertyDefinition Key="SelectTitle" Value="12" />
+              <pnp:PropertyDefinition Key="SelectFilename" Value="12" />
+              <pnp:PropertyDefinition Key="Edit" Value="0" />
+              <pnp:PropertyDefinition Key="owshiddenversion" Value="4" />
+              <pnp:PropertyDefinition Key="_UIVersion" Value="512" />
+              <pnp:PropertyDefinition Key="_UIVersionString" Value="1.0" />
+              <pnp:PropertyDefinition Key="GUID" Value="{C8D3E4AF-28F4-428A-A176-F2638DC40C69}" />
+              <pnp:PropertyDefinition Key="WorkflowVersion" Value="1" />
+              <pnp:PropertyDefinition Key="ParentVersionString" Value="12;#" />
+              <pnp:PropertyDefinition Key="ParentLeafName" Value="12;#" />
+              <pnp:PropertyDefinition Key="DocConcurrencyNumber" Value="4" />
+              <pnp:PropertyDefinition Key="ParentUniqueId" Value="{D240DECB-7C01-48EE-A170-BC9BA590DAE9}" />
+              <pnp:PropertyDefinition Key="StreamHash" Value="0x020000000000000000000000000000000000000000" />
+            </pnp:PropertyDefinitions>
+          </pnp:WorkflowSubscription>
+        </pnp:WorkflowSubscriptions>
+      </pnp:Workflows>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

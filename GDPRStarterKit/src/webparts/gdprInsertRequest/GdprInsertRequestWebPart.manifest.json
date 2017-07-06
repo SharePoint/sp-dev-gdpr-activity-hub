@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "3f3fac84-cbd6-44d7-880f-4ab5a65ad143",
+  "alias": "GdprInsertRequestWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "3f3fac84-cbd6-44d7-880f-4ab5a65ad143",
+    "group": { "default": "GDPR" },
+    "title": { "default": "GDPR Insert Request" },
+    "description": { "default": "Allows to insert a new GDPR Request" },
+    "officeFabricIconFontName": "AddFriend",
+    "properties": {
+      "description": "GDPRInsertRequest"
+    }
+  }]
+}

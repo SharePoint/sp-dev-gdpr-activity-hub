@@ -1,0 +1,39 @@
+.gdprEvent {
+  .container {
+    max-width: 100%;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    padding: 10px;
+  }
+
+  .listItem {
+    max-width: 100%;
+    margin: 5px auto 5px auto;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+:global .ms-ChoiceField--image {
+    margin-bottom: 6px;
+}
+:global .ms-ChoiceField--image .ms-ChoiceField-field--image {
+    padding: 10px;
+    min-width: auto;
+    width: 130px;
+    min-height: 100px;
+}
+:global .ms-ChoiceField--image .ms-ChoiceField-field--image .ms-ChoiceField-labelWrapper {
+    line-height: normal;
+    margin-top: 5px;
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 36px;
+}
+:global .ms-ChoiceField--image .ms-ChoiceField-field--image .ms-ChoiceField-innerField .ms-ChoiceField-iconWrapper {
+    font-size: 32px;
+    line-height: normal;
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "50c8ec09-6a38-4831-a537-fdedd8e560f3",
+  "alias": "GdprHierarchyWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "50c8ec09-6a38-4831-a537-fdedd8e560f3",
+    "group": { "default": "GDPR" },
+    "title": { "default": "GDPR Hierarchy" },
+    "description": { "default": "Hierarchy of Roles for GDPR Starter Kit" },
+    "officeFabricIconFontName": "Org",
+    "properties": {
+      "description": "GDPRHierarchy"
+    }
+  }]
+}

@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "libraryName": "gdpr-starter-kit",
+    "framework": "react",
+    "version": "1.0.2",
+    "libraryId": "2abca7c4-a732-4e27-b969-d465026ffbb5"
+  }
+}

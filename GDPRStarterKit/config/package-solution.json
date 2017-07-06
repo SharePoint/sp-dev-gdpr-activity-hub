@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "gdpr-starter-kit-client-side-solution",
+    "id": "2abca7c4-a732-4e27-b969-d465026ffbb5",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/gdpr-starter-kit.sppkg"
+  }
+}
