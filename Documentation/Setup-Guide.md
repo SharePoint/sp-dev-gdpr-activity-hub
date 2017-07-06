@@ -6,7 +6,9 @@ Please follow carefully the following guidance in order to succeed with the proj
 First of all, you need to create a new Microsoft Office 365 Group, which includes a modern SharePoint Online Group site (GROUP#0).
 Open your preferred web browser and go to the following URL:
 
+```PowerShell
 https://<your-tenant-name>.sharepoint.com/_layouts/15/sharepoint.aspx
+```
 
 Where the placeholder <your-tenant-name> needs to be replaced with the name of your Office 365 tenant.
 Click on the "+ Create Site" command button in the upper left corner of the screen, in order to create a new SharePoint Online Modern Site.
