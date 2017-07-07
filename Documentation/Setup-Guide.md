@@ -125,7 +125,7 @@ Now, go back to the home page of the site and configure the Power BI client-side
 Save and Publish the new home page and you are done!
 
 # Play with the Solution
-Now you are ready to play with the solution. You can find a detailed help in the ["User Guide"](./Documentation/User-Guide.md) document.
+Now you are ready to play with the solution. You can find a detailed help in the ["User Guide"](./User-Guide.md) document.
 
 
 
