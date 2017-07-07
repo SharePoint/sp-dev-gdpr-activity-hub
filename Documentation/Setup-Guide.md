@@ -22,12 +22,12 @@ Provide a Name and a Description for the new site and press the "Next" button.
 
 If you like to invite other people to share the site, you can select them through the "Add group members" panel that follows in the site creation flow. Once you have selected any additional members or owners, click the "Finish" button.
 
-The Office 365 Group, together with its Modern Site, will be created in a matter of few seconds. Copy and save the URL of the just created site, because you will use it pretty soon.
+The Office 365 Group, together with its Modern Site, will be created in a matter of few seconds. Copy and save the URL of the just created site, because you will use it in the upcoming sections of this guide.
 
 # Prepare the Development Environment
-In order to install the GDPR Activity Hub, eventually customizing the solution and hosting it in your own Office 365 CDN, you will need a development machine ready to build SharePoint Framework (SPFx) solutions. You can find detailed and updated instructions about how to setup up an SPFx development machine in the document ["Set up your SharePoint client-side web part development environment"](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+In order to install the GDPR Activity Hub, eventually customizing the solution and hosting it in your own hosting environment, you will need a development machine ready to build SharePoint Framework (SPFx) solutions. You can find detailed and updated instructions about how to setup up an SPFx development machine in the document ["Set up your SharePoint client-side web part development environment"](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 
-Now, download the source code of the project either using [this repository](https://github.com/SharePoint/sp-dev-gdpr-activity-hub) and a GIT client, or simply by downloading [a ZIP file](https://github.com/SharePoint/sp-dev-gdpr-activity-hub/archive/master.zip) with the source code of the solution.
+Now, pull the source code of the project either using [this repository](https://github.com/SharePoint/sp-dev-gdpr-activity-hub) and a GIT client, or simply download [a ZIP file](https://github.com/SharePoint/sp-dev-gdpr-activity-hub/archive/master.zip) with the source code of the solution.
 
 If you downloaded the ZIP file, please unzip it somewhere on your local file system.
 
@@ -36,24 +36,45 @@ In order to execute the PowerShell scripts needed to setup the solution, you hav
 * PnP PowerShell extensions, which can be installed following the [instructions provided here](https://github.com/SharePoint/PnP-PowerShell#installation).
 
 # Provision Artifacts
-From within the previously opened PowerShell console, go to the folder where you downloaded and eventually unzipped the source code of the solution, and move to the _Scripts_ sub-folder of the solution.
+Open a PowerShell console, go to the folder where you downloaded and eventually unzipped the source code of the solution, and move to the _Scripts_ sub-folder of the solution.
 
 Now, you can execute the following PowerShell command:
 
 ```PowerShell
 .\Provision-GDPRActivityHub.ps1 -GroupSiteUrl "https://<your-tenant-name>.sharepoint.com/sites/<your-group-site-URL>" `
                                 -Credentials $credentials
+                                -ConfigureCDN `
+                                -CDNSiteName "CDN" `
+                                -CDNLibraryName "CDNFiles"
 ```
 
 The PowerShell script requires some input arguments, which are:
 * **GroupSiteUrl**: the URL of the Modern Site that you created before.
 * **Credentials**: the credentials of a tenant administrator, which will be used to setup the solution. If you don't provide this argument, the script will prompt you for credentials during execution.
+* **ConfigureCDN**: an optional switch to instruct the script to create and configure an Office 365 CDN that will host the SPFx client-side web parts.
+* **CDNSiteName**: the relative URL of a SharePoint site collection that will be create to host the CDN files, if you select to create and configure the Office 365 CDN.
+* **CDNLibraryName**: the name of the document library that will be created to host the CDN files.
+
+The PowerShell script will accomplish for you the following tasks:
+* Provision the Information Architecture (Taxonomy Terms, Site Columms, Content Types, Lists and Libraries) onto the target Modern Site
+* Create and configure the CDN in Microsoft Office 365
+* Build the SPFx solution targeting your CDN for hosting the assets
+* Upload the SPFx assets to the CDN library
+
+Once the script will be successfully executed, you will see in the console window a confirmation message like:
+
+```PowerShell
+All the automatic steps are now completed!
+You can find the .SPPKG file at the following path: <your-local-path>\sharepoint\solution\gdpr-starter-kit.sppkg
+```
+
+and you will be able to take a note about the .SPPKG file path.
 
 # Upload the SPFx package
 You are now ready to upload the SPFx solution package to SharePoint Online. In order to do that, follow these steps:
 
-* Open the _App Catalog_ site for your tenant. If you don't have one or if you don't know the URL of your _App Catalog_ site, please follow the instructions illustrated in the document ["Use the App Catalog to make custom business apps available for your SharePoint Online environment"](https://support.office.com/en-us/article/Use-the-App-Catalog-to-make-custom-business-apps-available-for-your-SharePoint-Online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0?ui=en-US&rs=en-US&ad=US) to create a new _App Catalog_ site.
-* Go to the "Apps for SharePoint" library of the  _App Catalog_ and upload the file named _gdpr-starter-kit.sppkg_ that you can find under the _Scripts_ sub-folder of the main solution folder.
+* Open the _App Catalog_ site for your tenant. If you don't have one or if you don't know the URL of your _App Catalog_ site, please follow the instructions illustrated in document ["Use the App Catalog to make custom business apps available for your SharePoint Online environment"](https://support.office.com/en-us/article/Use-the-App-Catalog-to-make-custom-business-apps-available-for-your-SharePoint-Online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0?ui=en-US&rs=en-US&ad=US) to create a new _App Catalog_ site.
+* Go to the "Apps for SharePoint" library of the  _App Catalog_ and upload the file named _gdpr-starter-kit.sppkg_ from the path that you saved in the previous section.
 * Accept to trust and deploy the solution in your tenant by pressing the **Deploy** button in the following popup dialog.
 
 ![The UI of App Catalog while deploying a new App](./Figures/Fig04-App-Catalog-Deploy.png)
@@ -81,7 +102,7 @@ In the following Figure you can see the SPFx client-side web parts defined in th
 
 ![The UI to add a new SPFx client-side web part](./Figures/Fig08-Add-SPFx-Client-Side-Web-Parts.png)
 
-Go back to the home page of the site, edit the home page and remove all of the already existing client-side web parts. Add a "Power BI" client-side web part, in the next section you will configure it.
+Go back to the home of the site, edit the home page and remove all of the already existing client-side web parts. Add a "Power BI" client-side web part, which you will configure in the next section.
 
 # Upload and Configuration of the Power BI dashboard
 
@@ -93,18 +114,18 @@ Open the _"Home"_ ribbon, select the _"Edit Queries"_ command and click on the _
 
 ![The UI of Power BI to edit the connection settings](./Figures/Fig09-Configure-Power-BI-Data-Source.png)
 
-Now add a new data connection, targeting your Modern Site and provide a set of valid credentials to access the content of the site.
+Now add a new data connection, targeting your Modern Site and provide a set of valid credentials to access the content of the GDPR Activity Hub Modern Site.
 
 ![The UI of Power BI to edit the connection settings](./Figures/Fig10-Configure-Power-BI-Data-Source-2.png)
 
-Close the windows and select _"Publish"_ command on the _"Home"_ ribbon. Follow the instructions to publish the PBIX file on Power BI. Once the report has been published, save the URL on Power BI.
+Close the windows and select _"Publish"_ command on the _"Home"_ ribbon. Follow the instructions to publish the PBIX file on Power BI. Once the report has been published, save its URL in a safe place.
 
 Now, go back to the home page of the site and configure the Power BI client-side web part to target the URL of the report that you published in the previous section.
 
 Save and Publish the new home page and you are done!
 
 # Play with the Solution
-Now you are ready to play with the solution. You can find a detailed help in the ["How to Use the GDPR Activity Hub"](./Documentation/How-To-Use-GDPR-Activity-Hub.md) document.
+Now you are ready to play with the solution. You can find a detailed help in the ["User Guide"](./Documentation/User-Guide.md) document.
 
 
 
