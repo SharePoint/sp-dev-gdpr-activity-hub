@@ -15,12 +15,15 @@ In fact, the main components of the solution are a SharePoint Online Modern Site
 SharePoint Framework client-side web parts, few sample workflows built using Workflow Manager for SharePoint Online, and a Power BI
 dashboard. Moreover, there are some PowerShell script files that you can use to speed up the setup process of the solution in your own Office 365 tenants.
 
+## User Guide
+Please, refer to the [User Guide](./Documentation/User-Guide.md) document to understand what you can do with the GDPR Activity Hub.
+
 ## Target Audience
 The target audience for this project are Microsoft Partners and customers with an internal IT development team, which can install and customize
 the sample solution based on the real customer's needs. If you are an end-user company, you should ask to a Microsoft Partner for support to customize, install, and use this solution.
 
 ## Setup
-In order to setup the solution, you can follow the instructions provided in the [Setup Guide](./Documentation/Setup-Guide.md) document. If you like to customize the solution and host it in your own environment, please follow the [Setup Guide for Hosting on Office 365 CDN](./Documentation/Setup-Guide-Office-365-CDN.md).
+In order to setup the solution, you can follow the instructions provided in the [Setup Guide](./Documentation/Setup-Guide.md) document.
 
 ## Architecture
 Out of the box, the solution uses SharePoint Online to host the UI components, as well as to store data about events, requests, tasks and 
