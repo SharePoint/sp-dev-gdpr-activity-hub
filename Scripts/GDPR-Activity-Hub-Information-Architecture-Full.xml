@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.17.1707.0, Culture=neutral, PublicKeyToken=null" />
   <pnp:Templates ID="CONTAINER-TEMPLATE-5E3B9BE6176C475ABD2ACBA3840CE97C">
@@ -1183,9 +1183,6 @@
             </View>
           </pnp:Views>
           <pnp:Fields>
-            <Field Type="Boolean" DisplayName="Includes Sensitive Data" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="GDPR Columns" ID="{3daca661-856d-4952-ace2-4356a8b03742}" SourceID="{{siteid}}" StaticName="GDPRIncludesSensitiveData" Name="GDPRIncludesSensitiveData" Version="3" CustomFormatter="" Required="FALSE" Customization="" AllowDeletion="TRUE" ColName="bit4" RowOrdinal="0">
-              <Default>0</Default>
-            </Field>
             <Field DisplayName="Data Breach Management" Type="URL" Required="FALSE" ID="{20f41510-ae97-4177-ba95-fefdf0665194}" SourceID="{{listid:Events}}" StaticName="Data_x0020_Breach_x0020_Manageme" Name="Data_x0020_Breach_x0020_Manageme" ColName="nvarchar7" RowOrdinal="0" ColName2="nvarchar8" RowOrdinal2="0" Version="2" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
             <Field DisplayName="External Data Processing" Type="URL" Required="FALSE" ID="{a97ed8be-e4a4-41e8-b955-b67cfa62b293}" SourceID="{{listid:Events}}" StaticName="External_x0020_Data_x0020_Proces" Name="External_x0020_Data_x0020_Proces" ColName="nvarchar5" RowOrdinal="0" ColName2="nvarchar6" RowOrdinal2="0" Version="2" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
           </pnp:Fields>

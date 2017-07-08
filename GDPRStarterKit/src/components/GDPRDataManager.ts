@@ -156,7 +156,7 @@ export class GDPRDataManager implements IGDPRDataManager {
                         mappedEvent.GDPRConsentIsInternal = event.consentIsInternal;
                         if (event.includesSensitiveData)
                         {
-                            mappedEvent.GDPRIncludesSensitiveData0 = {
+                            mappedEvent.GDPRIncludesSensitiveData = {
                                 __metadata: { type: 'SP.Taxonomy.TaxonomyFieldValue' },
                                 Label: event.includesSensitiveData.Label,
                                 TermGuid: event.includesSensitiveData.TermGuid,
@@ -189,7 +189,7 @@ export class GDPRDataManager implements IGDPRDataManager {
                         mappedEvent.ContentTypeId = "0x0100B506463210A9D340A2E0E0A0889DC89207001AD2CE357E64F546B5BEE2786EB34571";
                         if (event.includesSensitiveData)
                         {
-                            mappedEvent.GDPRIncludesSensitiveData0 = {
+                            mappedEvent.GDPRIncludesSensitiveData = {
                                 __metadata: { type: 'SP.Taxonomy.TaxonomyFieldValue' },
                                 Label: event.includesSensitiveData.Label,
                                 TermGuid: event.includesSensitiveData.TermGuid,
