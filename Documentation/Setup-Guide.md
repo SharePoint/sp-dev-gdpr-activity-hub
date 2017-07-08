@@ -108,19 +108,25 @@ Go back to the home of the site, edit the home page and remove all of the alread
 
 In order to install the GDPR Activity Hub dashboard based on Power BI, you need to have at least a FREE license of Power BI. Thus [download and install the Power BI desktop client](https://powerbi.microsoft.com/en-us/desktop/).
 
-Once the Power BI Desktop client is installed, run it and open the _GDPR.pbix_ file that is located under the _Scripts_ folder of the solution that you downloaded from GitHub or from the path where you unzipped the solution.
+Once the Power BI Desktop client is installed, run it and open the _GDPR.pbit_ file that is located under the _Scripts_ folder of the solution that you downloaded from GitHub or from the path where you unzipped the solution.
 
-Open the _"Home"_ ribbon, select the _"Edit Queries"_ command and click on the _"Data Source settings"_ menu item.
+When you open the file, it will prompt you for the URL of the GDPR Activity Hub site, as you can see in the following Figure.
 
-![The UI of Power BI to edit the connection settings](./Figures/Fig09-Configure-Power-BI-Data-Source.png)
+![The UI of Power BI to configure the GDPR Activity Hub URL](./Figures/Fig09-Power-BI-Template-URL-Prompt.png)
 
-Now add a new data connection, targeting your Modern Site and provide a set of valid credentials to access the content of the GDPR Activity Hub Modern Site.
+Provide the URL of the Modern Site that you created and  press the _"Load"_ button. In case of need, the Power BI Desktop client will ask you for a Work and School account to use in order to access the target site. Moreover, in case the Power BI Desktop client will ask you, select the _"Organizational"_ Privacy Level.
 
-![The UI of Power BI to edit the connection settings](./Figures/Fig10-Configure-Power-BI-Data-Source-2.png)
+Wait for the Power BI Desktop client to download and refresh data from your data source.
 
-Close the windows and select _"Publish"_ command on the _"Home"_ ribbon. Follow the instructions to publish the PBIX file on Power BI. Once the report has been published, save its URL in a safe place.
+Double-check to be using the right Power BI account, in the upper right corner of the UI of Power BI Desktop, you need to target an account valid for your target tenant. If you don't have an account, you can sign-up for a new one for FREE, or you can eventually subscribe for a 60 days trial of the Power BI Pro service.
 
-Now, go back to the home page of the site and configure the Power BI client-side web part to target the URL of the report that you published in the previous section.
+Once the refresh is completed and once you are using the right target account, click the  _"Publish"_ command in the _"Home"_ ribbon. Follow the instructions to publish the report on Power BI. In particular, select the Modern Site for the GDPR Activity Hub as the destination for your report, as you can see in the following Figure.
+
+![The UI of Power BI to publish the report on a target](./Figures/Fig10-Power-BI-Select-Target.png)
+
+Once the report has been published, click on the link _"Open [name of your report] in  Power BI"_ and see your report in Power BI. Save the URL of the page, and go back to the home page of the site. 
+
+There configure the Power BI client-side web part to target the URL of the report.
 
 Save and Publish the new home page and you are done!
 

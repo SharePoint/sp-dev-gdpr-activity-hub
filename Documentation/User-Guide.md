@@ -34,7 +34,7 @@ There are six flavors of events that you can keep track of:
 
 You simply need to select the kind of event that you want to file, and the UI will adapt the form fields accordingly, as well as the validation rules.
 
-Once you have properly filled out the form, accordingly to the validation rules in place, the _Save_ button will become enabled and by pressing it a new item will be stored in the _Events_ list in your SharePoint Online Modern Site. After saving a new item, the client-side web part will notify you with a message like the one depicted in the following figure.
+Once you have properly filled out the form, accordingly to the validation rules in place, the _Save_ button will become enabled and by pressing it a new item will be stored in the _Events_ list in your SharePoint Online Modern Site. After saving a new item, the client-side web part will notify you with a message like the one depicted in the following Figure.
 
 ![The UI to file a new Event/Incident](./Figures/Fig13-Add-Item-Confirmation.png)
 
