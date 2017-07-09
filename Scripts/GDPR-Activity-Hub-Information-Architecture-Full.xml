@@ -1231,6 +1231,11 @@
             <pnp:FieldRef ID="0130230b-e637-4455-961c-172a2c9acdca" Name="GDPRConsentLookupAvailable" DisplayName="Original Consent Available" />
             <pnp:FieldRef ID="767de5a7-e4ca-4dc3-8baa-abecb354d720" Name="GDPRConsentIsInternal" DisplayName="Internal (Employee) Data Subject" />
           </pnp:FieldRefs>
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Sample data placeholder</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Hierarchy" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/GDPR Hierarchy" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
           <pnp:ContentTypeBindings>
@@ -1313,6 +1318,11 @@
             <pnp:FieldRef ID="5ceef1e6-84ef-49d8-8517-3ec8a44544d6" Name="GDPRPersonalData" DisplayName="Personal Data" />
             <pnp:FieldRef ID="f9daa214-b1dd-4b0d-afb3-0c8f454778ec" Name="GDPRProcessingType" Required="true" DisplayName="Processing Type" />
           </pnp:FieldRefs>
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Sample data placeholder</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Tasks" Description="" DocumentTemplate="" TemplateType="171" Url="Lists/GDPR Tasks" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="f9ce21f8-f437-4f7e-8bc6-946378c850f0" ContentTypesEnabled="true" EnableFolderCreation="false">
           <pnp:ContentTypeBindings>

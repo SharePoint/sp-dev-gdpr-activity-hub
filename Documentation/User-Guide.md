@@ -77,19 +77,10 @@ In the following Figure you can see a sample hierarchy, presented by the GDPR Hi
 
 ![The UI of the Tasks client-side web part](./Figures/Fig16-Hierarchy-Web-Part.png)
 
-## Taxonomy Customization
-Most of the metadata available in the UI of the client-side web parts are customizable and are based on a SharePoint Online Term Group.
-In fact, after installing the GDPR Activity Hub, in the Term Store Management of your SharePoint Online tenant, you will find the following Term Sets:
-* Breach Type: defines the various flavors for a data breach incident. You can customize the terms of this term set.
-* Consent Type: defines the various flavors of a consent. You can customize the terms of this term set.
-* Delivery Format: defines the various delivery formats for a data export. You can customize the terms of this term set.
-* Delivery Methods: defines the various delivery methods for a data export. You can customize the terms of this term set.
-* GDPR Role: defines the roles of users, from a GDPR perspective. You should not customize this term set, unless you do not customize the solution code accordingly.
-* Processing Type: defines the various processing types for a data processing event. You can customize the terms of this term set.
-* Risk Type: defines the various risk types for an identity risk incident. You can customize the terms of this term set.
-* Sensitive Data Type: defines the various kind of sensitive data. You can customize the terms of this term set.
-* Severity: defines the severity levels (Low, Medium, High, Critical), of an event. You should not customize this term set, unless you do not customize the solution code accordingly.
+## Limitations of the Solution
+The GDPR Activity Hub is a sample starter kit solution that you can use to take inspiration from. However, you should consider that it is not a "ready to go" full product, and most likely you will need to customize it, in order to adhere to your real business requirements. For further information about how to customize the GDPR Activity Hub, you can read the [Customization Guide](./Customization.md).
 
-In the following screenshot you can see the GDPR Term Group, together with its Term Sets.
-
-![The UI of the Tasks client-side web part](./Figures/Fig18-Term-Store-Management.png)
+Here are highlighted some well-known limitations:
+* Because the GDPR Activity Hub uses SharePoint Online lists to store data about requests and events, you should keep in mind the limits of SharePoint Online in terms of maximum number of items in a list.
+* The home page dashboard is built on top of Microsoft Power BI, which can be leveraged in its FREE version, as well. However, with the FREE version of Power BI you are limited to a maximum of 1GB of data per user, and you cannot have collaboration on reports by multiple users.
+* The workflows processes are just for the sake of making examples, and most likely you will need to extend or customize them in order to target your real business goals. The workflows have been defined using Workflow Manager and SharePoint Designer, in order to being able to apply them on the fly on any target site where you install the GDPR Activity Hub. However, the GDPR Activity Hub targets Modern Sites, where you cannot use SharePoint Designer. Thus, in order to edit or customize a workflow you should work on a Classic Team Site, then export the workflow definitions using the PnP Provisioning Engine and import them in the target Modern Site, still using the PnP Provisioning Engine.

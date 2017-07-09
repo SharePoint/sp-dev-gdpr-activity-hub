@@ -2,6 +2,14 @@
 In order to setup the GDPR Activity Hub, you have to accomplish few steps. Some of these steps are automatic, some of them are manual.
 Please follow carefully the following guidance in order to succeed with the project installation.
 
+Before digging into the installation steps, you should consider the main requirements of the solution:
+* You need to have a valid Microsoft Office 365 E3 subscription
+* You need to have a development machine configured to create SharePoint Framework solutions (see the following steps)
+* You need to install the PowerShell extensions for SharePoint Online
+* You need to install the PnP PowerShell extensions
+
+Aside from the Office 365 subscription, you will find further details about the other requirements in the following installation steps.
+
 ## Create the Modern Site
 First of all, you need to create a new Microsoft Office 365 Group, which includes a modern SharePoint Online Group site (GROUP#0).
 Open your preferred web browser and go to the following URL:
@@ -102,6 +110,8 @@ In the following Figure you can see the SPFx client-side web parts defined in th
 
 ![The UI to add a new SPFx client-side web part](./Figures/Fig08-Add-SPFx-Client-Side-Web-Parts.png)
 
+> Sometimes the creation of the Office 365 CDN can take a while to become ready and fully functional. In case of any failure while adding the client-side web parts to the Modern Site, please wait up to 15 minutes to allow the CDN to be ready.
+
 Go back to the home of the site, edit the home page and remove all of the already existing client-side web parts. Add a "Power BI" client-side web part, which you will configure in the next section.
 
 # Upload and Configuration of the Power BI dashboard
@@ -132,10 +142,3 @@ Save and Publish the new home page and you are done!
 
 # Play with the Solution
 Now you are ready to play with the solution. You can find a detailed help in the ["User Guide"](./User-Guide.md) document.
-
-
-
-
-
-
-
