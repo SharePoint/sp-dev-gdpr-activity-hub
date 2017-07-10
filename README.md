@@ -1,7 +1,7 @@
 ﻿# GDPR Activity Hub (July 2017)
 This is the repository for the GDPR Activity Hub project.
 
-![The UI of the Home Page of GDPR Activity Hub](./Figures/Fig11-Home-Page.png)
+![The UI of the Home Page of GDPR Activity Hub](./Documentation/Figures/Fig11-Home-Page.png)
 
 The GDPR Activity Hub is an open source project that you can consider as a starter kit for building a management hub for EU GDPR
 (European Global Data Protection Regulation). The goal of this project is to give to customers and partners something to start with
