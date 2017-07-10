@@ -32,7 +32,7 @@ If you like to invite other people to share the site, you can select them throug
 
 The Office 365 Group, together with its Modern Site, will be created in a matter of few seconds. Copy and save the URL of the just created site, because you will use it in the upcoming sections of this guide.
 
-# Prepare the Development Environment
+## Prepare the Development Environment
 In order to install the GDPR Activity Hub, eventually customizing the solution and hosting it in your own hosting environment, you will need a development machine ready to build SharePoint Framework (SPFx) solutions. You can find detailed and updated instructions about how to setup up an SPFx development machine in the document ["Set up your SharePoint client-side web part development environment"](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 
 Now, pull the source code of the project either using [this repository](https://github.com/SharePoint/sp-dev-gdpr-activity-hub) and a GIT client, or simply download [a ZIP file](https://github.com/SharePoint/sp-dev-gdpr-activity-hub/archive/master.zip) with the source code of the solution.
@@ -43,7 +43,7 @@ In order to execute the PowerShell scripts needed to setup the solution, you hav
 * PowerShell extensions for SharePoint Online, which are included in the ["SharePoint Online Management Shell"](https://www.microsoft.com/en-us/download/details.aspx?id=35588)
 * PnP PowerShell extensions, which can be installed following the [instructions provided here](https://github.com/SharePoint/PnP-PowerShell#installation).
 
-# Provision Artifacts
+## Provision Artifacts
 Open a PowerShell console, go to the folder where you downloaded and eventually unzipped the source code of the solution, and move to the _Scripts_ sub-folder of the solution.
 
 > Notice that you need to have an account that is Term Store Administrator in order to provision the solution, otherwise you will get an authorization exception and the setup process will fail.
@@ -80,7 +80,7 @@ You can find the .SPPKG file at the following path: <your-local-path>\sharepoint
 
 and you will be able to take a note about the .SPPKG file path.
 
-# Upload the SPFx package
+## Upload the SPFx package
 You are now ready to upload the SPFx solution package to SharePoint Online. In order to do that, follow these steps:
 
 * Open the _App Catalog_ site for your tenant. If you don't have one or if you don't know the URL of your _App Catalog_ site, please follow the instructions illustrated in document ["Use the App Catalog to make custom business apps available for your SharePoint Online environment"](https://support.office.com/en-us/article/Use-the-App-Catalog-to-make-custom-business-apps-available-for-your-SharePoint-Online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0?ui=en-US&rs=en-US&ad=US) to create a new _App Catalog_ site.
@@ -89,7 +89,7 @@ You are now ready to upload the SPFx solution package to SharePoint Online. In o
 
 ![The UI of App Catalog while deploying a new App](./Figures/Fig04-App-Catalog-Deploy.png)
 
-# Add App and Create Modern Pages
+## Add App and Create Modern Pages
 Now browse to the Modern Site that you created before, Add an App by clicking the New -> App menu item highligthed in the following Figure.
 
 ![The UI of App Catalog while deploying a new App](./Figures/Fig05-Add-New-App.png)
@@ -116,8 +116,7 @@ In the following Figure you can see the SPFx client-side web parts defined in th
 
 Go back to the home of the site, edit the home page and remove all of the already existing client-side web parts. Add a "Power BI" client-side web part, which you will configure in the next section.
 
-# Upload and Configuration of the Power BI dashboard
-
+## Upload and Configuration of the Power BI dashboard
 In order to install the GDPR Activity Hub dashboard based on Power BI, you need to have at least a FREE license of Power BI. Thus [download and install the Power BI desktop client](https://powerbi.microsoft.com/en-us/desktop/).
 
 Once the Power BI Desktop client is installed, run it and open the _GDPR.pbit_ file that is located under the _Scripts_ folder of the solution that you downloaded from GitHub or from the path where you unzipped the solution.
@@ -142,5 +141,5 @@ There configure the Power BI client-side web part to target the URL of the repor
 
 Save and Publish the new home page and you are done!
 
-# Play with the Solution
+## Play with the Solution
 Now you are ready to play with the solution. You can find a detailed help in the ["User Guide"](./User-Guide.md) document.
