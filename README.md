@@ -1,4 +1,4 @@
-# GDPR Activity Hub (July 2017)
+﻿# GDPR Activity Hub (July 2017)
 This is the repository for the GDPR Activity Hub project.
 
 The GDPR Activity Hub is an open source project that you can consider as a starter kit for building a management hub for EU GDPR
@@ -43,4 +43,5 @@ MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, AS TO THE INFORMA
 This GDPR Activity Hub does not provide the user with any legal rights to any intellectual property in any Microsoft product or service.  Organizations may use this GDPR Activity Hub for internal, reference purposes only.
 
 © 2017 Microsoft.  All rights reserved.
+
 
