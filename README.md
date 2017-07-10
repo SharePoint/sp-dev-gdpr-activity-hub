@@ -46,4 +46,4 @@ This GDPR Activity Hub does not provide the user with any legal rights to any in
 
 © 2017 Microsoft.  All rights reserved.
 
-![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/gdprstarterkit/readme)
+![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/readme)

@@ -23,4 +23,4 @@ Save and close all of the windows and refresh your data.
 ## Power BI - Sometimes it fails while refreshing data
 In order to load the dashboard, you should have a full set of data in the target data source site. We plan to add a bunch of fake items in the target lists (Events and Requests) during the PowerShell setup phase. Right now, it is better to load some real or sample data in the GDPR Activity Hub portal before configuring the Power BI dashboard.
 
-![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/gdprstarterkit/troubleshooting-guide)
+![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/troubleshooting-guide)
