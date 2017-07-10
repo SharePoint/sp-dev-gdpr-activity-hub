@@ -46,6 +46,8 @@ In order to execute the PowerShell scripts needed to setup the solution, you hav
 # Provision Artifacts
 Open a PowerShell console, go to the folder where you downloaded and eventually unzipped the source code of the solution, and move to the _Scripts_ sub-folder of the solution.
 
+> Notice that you need to have an account that is Term Store Administrator in order to provision the solution, otherwise you will get an authorization exception and the setup process will fail.
+
 Now, you can execute the following PowerShell command:
 
 ```PowerShell
