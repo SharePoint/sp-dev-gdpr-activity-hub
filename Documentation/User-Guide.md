@@ -12,7 +12,7 @@ In the following sections you will learn about each of these items.
 ## Home Page and Dashboard
 The main entry point of the solution is the home page of the Modern Site that hosts the data. In the following Figure you can see the dashboard (built using Power BI) that allows you to measure and monitor your performance, related to the main GDPR requests and events.
 
-![The UI to file a new Event/Incident](./Figures/Fig11-Home-Page.png)
+![The UI of the Home Page of GDPR Activity Hub](./Figures/Fig11-Home-Page.png)
 
 The dashboard gets updated based on a schedule and loads data stored in the current Modern Site and manually loaded by you, or your end users, by leveraging the client-side web parts of this solution.
 
@@ -84,3 +84,5 @@ Here are highlighted some well-known limitations:
 * Because the GDPR Activity Hub uses SharePoint Online lists to store data about requests and events, you should keep in mind the limits of SharePoint Online in terms of maximum number of items in a list.
 * The home page dashboard is built on top of Microsoft Power BI, which can be leveraged in its FREE version, as well. However, with the FREE version of Power BI you are limited to a maximum of 1GB of data per user, and you cannot have collaboration on reports by multiple users.
 * The workflows processes are just for the sake of making examples, and most likely you will need to extend or customize them in order to target your real business goals. The workflows have been defined using Workflow Manager and SharePoint Designer, in order to being able to apply them on the fly on any target site where you install the GDPR Activity Hub. However, the GDPR Activity Hub targets Modern Sites, where you cannot use SharePoint Designer. Thus, in order to edit or customize a workflow you should work on a Classic Team Site, then export the workflow definitions using the PnP Provisioning Engine and import them in the target Modern Site, still using the PnP Provisioning Engine.
+
+![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/gdprstarterkit/user-guide)

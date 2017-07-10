@@ -1,6 +1,8 @@
 ﻿# GDPR Activity Hub (July 2017)
 This is the repository for the GDPR Activity Hub project.
 
+![The UI of the Home Page of GDPR Activity Hub](./Figures/Fig11-Home-Page.png)
+
 The GDPR Activity Hub is an open source project that you can consider as a starter kit for building a management hub for EU GDPR
 (European Global Data Protection Regulation). The goal of this project is to give to customers and partners something to start with
 and to play with in order to keep track of all the fundamental events, requests, tasks and activities required to be compliant with
@@ -44,4 +46,4 @@ This GDPR Activity Hub does not provide the user with any legal rights to any in
 
 © 2017 Microsoft.  All rights reserved.
 
-
+![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/gdprstarterkit/readme)

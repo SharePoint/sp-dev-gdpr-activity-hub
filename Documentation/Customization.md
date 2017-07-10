@@ -49,3 +49,5 @@ At the time of this writing, the GDPR Activity Hub relies on SharePoint Online l
 If that is the case, you can simply define a new .ts file in the src\Components folder of this solution and implement the business logic to save data in the external DBMS.
 Out of the box, the GDPR Activity Hub uses the _GDPRDataManager.ts_ file, which implements the concrete persistence layer for SharePoint Online by implementing the interface _IGDPRDataManager_. Any new custom data provider should implement the same interface.
 Moreover, if you plan to use the Power BI report, you should replace the connection to the SharePoint Online site with a new connection that target the new DBMS.
+
+![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/gdprstarterkit/customization)

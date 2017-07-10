@@ -145,3 +145,5 @@ Save and Publish the new home page and you are done!
 
 ## Play with the Solution
 Now you are ready to play with the solution. You can find a detailed help in the [User Guide](./User-Guide.md) document. In case of any issues during the setup process, please refer to the [Troubleshooting Guide](./Troubleshooting-Guide.md)
+
+![](https://telemetry.sharepointpnp.com/sp-dev-gdpr-activity-hub/gdprstarterkit/setup-guide)
