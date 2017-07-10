@@ -119,6 +119,8 @@ Go back to the home of the site, edit the home page and remove all of the alread
 ## Upload and Configuration of the Power BI dashboard
 In order to install the GDPR Activity Hub dashboard based on Power BI, you need to have at least a FREE license of Power BI. Thus [download and install the Power BI desktop client](https://powerbi.microsoft.com/en-us/desktop/).
 
+> Notice that it is highly suggested to load some data in the SharePoint Online site (eventually fake data that you can delete at the end of this section) in order to allow the dashboard to find all the reference items in the data source site.
+
 Once the Power BI Desktop client is installed, run it and open the _GDPR.pbit_ file that is located under the _Scripts_ folder of the solution that you downloaded from GitHub or from the path where you unzipped the solution.
 
 When you open the file, it will prompt you for the URL of the GDPR Activity Hub site, as you can see in the following Figure.
@@ -142,4 +144,4 @@ There configure the Power BI client-side web part to target the URL of the repor
 Save and Publish the new home page and you are done!
 
 ## Play with the Solution
-Now you are ready to play with the solution. You can find a detailed help in the ["User Guide"](./User-Guide.md) document.
+Now you are ready to play with the solution. You can find a detailed help in the [User Guide](./User-Guide.md) document. In case of any issues during the setup process, please refer to the [Troubleshooting Guide](./Troubleshooting-Guide.md)
