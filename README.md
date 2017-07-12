@@ -37,6 +37,12 @@ you can eventually customize the solution (because it is an open source project)
 DBMS based storage system. The same approach can be used to connect the Power BI dashboard with a DBMS instead of using SharePoint Online as the 
 main data source.
 
+## Resources
+
+* [European Global Data Protection Regulation (GDPR)](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
+* [SharePoint Framework](https://dev.office.com/sharepoint/docs/spfx/sharepoint-framework-overview)
+* [Power BI](https://powerbi.microsoft.com/en-us/)
+
 ## Disclaimer
 This GDPR Activity Hub is intended to assist organizations with their GDPR compliance progress.  This GDPR Activity Hub should not be relied upon to determine how GDPR applies to an organization or an organization’s compliance with GDPR.  This GDPR Activity Hub does not constitute legal advice, nor does it provide any certifications or guarantees regarding GDPR compliance.  Instead, we hope the GDPR Activity Hub identifies steps that organizations can implement to simplify their GDPR compliance efforts.  The application of GDPR is highly fact-specific. We encourage all organizations using this GDPR Activity Hub to work with a legally qualified professional to discuss GDPR, how it applies specifically to their organization, and how best to ensure compliance.
 
