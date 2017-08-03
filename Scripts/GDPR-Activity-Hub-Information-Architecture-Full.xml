@@ -1475,7 +1475,7 @@
                 <FieldRef Name="StartDate" />
                 <FieldRef Name="DueDate" />
                 <FieldRef Name="Title" />
-                <FieldRef Name="Description" />
+                <FieldRef Name="Body" />
               </ViewFields>
             </View>
           </pnp:Views>
@@ -1519,7 +1519,7 @@
                 <FieldRef Name="Group" />
                 <FieldRef Name="Outcome" />
                 <FieldRef Name="Duration" />
-                <FieldRef Name="Description" />
+                <FieldRef Name="DLC_Description" />
                 <FieldRef Name="Data" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
@@ -1538,7 +1538,7 @@
             <pnp:FieldRef ID="c86a2f7f-7680-4a0b-8907-39c4f4855a35" Name="Group" DisplayName="Group Type" />
             <pnp:FieldRef ID="dcde7b1f-918b-4ed5-819f-9798f8abac37" Name="Outcome" DisplayName="Outcome" />
             <pnp:FieldRef ID="4d54445d-1c84-4a6d-b8db-a51ded4e1acc" Name="Duration" DisplayName="Duration" />
-            <pnp:FieldRef ID="2fd53156-ff9d-4cc3-b0ac-fe8a7bc82283" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="2fd53156-ff9d-4cc3-b0ac-fe8a7bc82283" Name="DLC_Description" DisplayName="Description" />
             <pnp:FieldRef ID="38269294-165e-448a-a6b9-f0e09688f3f9" Name="Data" DisplayName="Data" />
           </pnp:FieldRefs>
         </pnp:ListInstance>
