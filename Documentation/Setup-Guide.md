@@ -25,7 +25,7 @@ Click on the "+ Create Site" command button in the upper left corner of the scre
 
 Select to create a new "Team Site" by clicking on the icon on the left side of the "Create a Site" panel.
 Provide a Name and a Description for the new site and press the "Next" button.
-
+ '
 > It is up to you to select whether the Office 365 Group will be Public or Private.
 
 If you like to invite other people to share the site, you can select them through the "Add group members" panel that follows in the site creation flow. Once you have selected any additional members or owners, click the "Finish" button.
@@ -52,7 +52,7 @@ Now, you can execute the following PowerShell command:
 
 ```PowerShell
 .\Provision-GDPRActivityHub.ps1 -GroupSiteUrl "https://<your-tenant-name>.sharepoint.com/sites/<your-group-site-URL>" `
-                                -Credentials $credentials
+                                -Credentials $credentials `
                                 -ConfigureCDN `
                                 -CDNSiteName "CDN" `
                                 -CDNLibraryName "CDNFiles"
@@ -60,7 +60,7 @@ Now, you can execute the following PowerShell command:
 
 The PowerShell script requires some input arguments, which are:
 * **GroupSiteUrl**: the URL of the Modern Site that you created before.
-* **Credentials**: the credentials of a tenant administrator, which will be used to setup the solution. If you don't provide this argument, the script will prompt you for credentials during execution.
+* **Credentials**: the credentials of a tenant administrator, which will be used to setup the solution. If you don't provide this argument, the script will prompt you for credentials during execution. NB! Two-factor authentication must be turned off for the credentials you enter.
 * **ConfigureCDN**: an optional switch to instruct the script to create and configure an Office 365 CDN that will host the SPFx client-side web parts.
 * **CDNSiteName**: the relative URL of a SharePoint site collection that will be create to host the CDN files, if you select to create and configure the Office 365 CDN.
 * **CDNLibraryName**: the name of the document library that will be created to host the CDN files.
