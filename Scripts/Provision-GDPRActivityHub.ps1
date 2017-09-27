@@ -127,17 +127,11 @@ try
             $context = Get-PnPContext
             $context.Load($packageFolder)
             Execute-PnPQuery
-
+	    
+	    $cdnSiteAssetsUploadUrl = $CDNLibraryName + "/GDPRActivityHub"
             foreach ($file in (dir ..\GDPRStarterKit\temp\deploy -File)) 
             {
-                $fileStream = New-Object IO.FileStream($file.FullName, [System.IO.FileMode]::Open)
-                $fileCreationInfo = New-Object Microsoft.SharePoint.Client.FileCreationInformation
-                $fileCreationInfo.Overwrite = $true
-                $fileCreationInfo.ContentStream = $fileStream
-                $fileCreationInfo.URL = $file
-                $upload = $packageFolder.Files.Add($fileCreationInfo)
-                $context.Load($upload)
-                Execute-PnPQuery
+	    	$uploadedFile = Add-PnPFile -Path $file.FullName -Folder $cdnSiteAssetsUploadUrl
             }
 
             # Configure the CDN at the tenant level
