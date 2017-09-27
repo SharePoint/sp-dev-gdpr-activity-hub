@@ -112,6 +112,7 @@ try
             Write-Host "Building SPFx package and bundling"
             Push-Location ..\GDPRStarterKit
 
+            npm install
             $cdnSiteAssetsFullUrl = "https://publiccdn.sharepointonline.com/" + $spoTenantName + "/sites/" + $CDNSiteName + "/" + $CDNLibraryName + "/GDPRActivityHub"
             & gulp update-manifest --cdnpath "$cdnSiteAssetsFullUrl"
             & gulp clean
