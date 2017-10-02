@@ -109,9 +109,11 @@ try
             New-PnPList -Title $CDNLibraryName -Url $CDNLibraryName -Template DocumentLibrary
 
             # Build and package the solution
-            Write-Host "Building SPFx package and bundling"
+            Write-Host "Installing npm packages"
             Push-Location ..\GDPRStarterKit
+            npm i
 
+            Write-Host "Building SPFx package and bundling"
             $cdnSiteAssetsFullUrl = "https://publiccdn.sharepointonline.com/" + $spoTenantName + "/sites/" + $CDNSiteName + "/" + $CDNLibraryName + "/GDPRActivityHub"
             & gulp update-manifest --cdnpath "$cdnSiteAssetsFullUrl"
             & gulp clean
