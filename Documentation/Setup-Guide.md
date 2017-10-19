@@ -1,6 +1,6 @@
 # GDPR Activity Hub - Setup Guide Using a Shared CDN
-In order to setup the GDPR Activity Hub, you have to accomplish few steps. Some of these steps are automatic, some of them are manual.
-Please follow carefully the following guidance in order to succeed with the project installation.
+In order to setup the GDPR Activity Hub, you have to follow a few steps. Some of these steps are automatic and some are manual.
+Please follow carefully the guidance below in order to succeed with the project installation.
 
 Before digging into the installation steps, you should consider the main requirements of the solution:
 * You need to have a valid Microsoft Office 365 E3 subscription
