@@ -113,6 +113,7 @@ try
             Push-Location ..\GDPRStarterKit
 
             $cdnSiteAssetsFullUrl = "https://publiccdn.sharepointonline.com/" + $spoTenantName + "/sites/" + $CDNSiteName + "/" + $CDNLibraryName + "/GDPRActivityHub"
+            & npm install --save
             & gulp update-manifest --cdnpath "$cdnSiteAssetsFullUrl"
             & gulp clean
             & gulp bundle --ship
@@ -128,16 +129,10 @@ try
             $context.Load($packageFolder)
             Execute-PnPQuery
 
+            $cdnSiteAssetsUploadUrl = $CDNLibraryName + "/GDPRActivityHub"
             foreach ($file in (dir ..\GDPRStarterKit\temp\deploy -File)) 
             {
-                $fileStream = New-Object IO.FileStream($file.FullName, [System.IO.FileMode]::Open)
-                $fileCreationInfo = New-Object Microsoft.SharePoint.Client.FileCreationInformation
-                $fileCreationInfo.Overwrite = $true
-                $fileCreationInfo.ContentStream = $fileStream
-                $fileCreationInfo.URL = $file
-                $upload = $packageFolder.Files.Add($fileCreationInfo)
-                $context.Load($upload)
-                Execute-PnPQuery
+                $uploadedFile = Add-PnPFile -Path $file.FullName -Folder $cdnSiteAssetsUploadUrl
             }
 
             # Configure the CDN at the tenant level

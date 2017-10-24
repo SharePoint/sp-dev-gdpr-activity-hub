@@ -20,7 +20,7 @@ In the following screenshot you can see the _"GDPR"_ Term Group, together with i
 ![The UI of the Tasks client-side web part](./Figures/Fig18-Term-Store-Management.png)
 
 ## Workflows Customization
-In order to customize the workflow processes, you can create a Classic Team Site, apply the PnP provisioning templates that define the solution (files [GDPR-Activity-Hub-Information-Architecture-Full.xml](../Scripts/GDPR-Activity-Hub-Information-Architecture-Full.xml) and [GDPR-Activity-Hub-Workflows.xml](./Scripts/GDPR-Activity-Hub-Workflows.xml)) by using the following syntax:
+In order to customize the workflow processes, you can create a Classic Team Site, apply the PnP provisioning templates that define the solution (files [GDPR-Activity-Hub-Information-Architecture-Full.xml](../Scripts/GDPR-Activity-Hub-Information-Architecture-Full.xml) and [GDPR-Activity-Hub-Workflows.xml](../Scripts/GDPR-Activity-Hub-Workflows.xml)) by using the following syntax:
 
 ```PowerShell
 # Connect to the target site
