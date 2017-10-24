@@ -146,6 +146,7 @@ export default class GdprInsertEvent extends React.Component<IGdprInsertEventPro
               <SPPeoplePicker
                 context={ this.props.context }
                 label={ strings.EventAssignedToFieldLabel }
+                required={ true } 
                 onChanged={ this._onChangedEventAssignedTo }
                 placeholder={ strings.EventAssignedToFieldPlaceholder }
                 />
