@@ -65,9 +65,10 @@ In the following Figure you can see the _write-manifest.json_ file in the UI of 
 
 * Save the _write-manifest.json_ file and go back to the PowerShell console, which should still be located under the solution's folder
 
-* From within the console, execute the following commands:
+* From within the console, execute the following commands in order to install the dependencies and generating the bundle:
 
 ```PowerShell
+npm install
 gulp bundle --ship
 gulp package-solution --ship
 ```
