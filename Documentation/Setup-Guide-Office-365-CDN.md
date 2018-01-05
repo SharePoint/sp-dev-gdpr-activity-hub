@@ -88,7 +88,6 @@ Now, you can execute the following PowerShell command:
                                 -ConfigureCDN  `
                                 -CDNSiteName "CDN"  `
                                 -CDNLibraryName "CDNFiles"  `
-                                -SPFxAssetsPath <path-of-assets>
 ```
 
 The PowerShell script requires some input arguments, which are:
@@ -97,7 +96,6 @@ The PowerShell script requires some input arguments, which are:
 * **ConfigureCDN**: an optional switch to instruct the script to create and configure an Office 365 CDN that will host the SPFx client-side web parts.
 * **CDNSiteName**: the relative URL of a SharePoint site collection that will be create to host the CDN files, if you select to create and configure the Office 365 CDN.
 * **CDNLibraryName**: the name of the document library that will be created to host the CDN files.
-* **SPFxAssetsPath**: the file system path of the folder where your SPFx client-side web parts assets are stored. Usually it is the _temp/deploy_ subfolder of your SFPx solution.
 
 > Notice that you can skip the configuration of the CDN in Microsoft Office 365, and you can instead use whatever else hosting solution of your choice.
 
