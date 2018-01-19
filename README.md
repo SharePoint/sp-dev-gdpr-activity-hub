@@ -1,4 +1,4 @@
-﻿# GDPR Activity Hub (October 2017)
+﻿# GDPR Activity Hub (January 2018)
 This is the repository for the GDPR Activity Hub project.
 
 ![The UI of the Home Page of GDPR Activity Hub](./Documentation/Figures/Fig11-Home-Page.png)
