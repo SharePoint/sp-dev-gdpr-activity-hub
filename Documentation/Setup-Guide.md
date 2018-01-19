@@ -52,7 +52,7 @@ Now, you can execute the following PowerShell command:
 
 ```PowerShell
 .\Provision-GDPRActivityHub.ps1 -GroupSiteUrl "https://<your-tenant-name>.sharepoint.com/sites/<your-group-site-URL>" `
-                                -Credentials $credentials
+                                -Credentials $credentials `
                                 -ConfigureCDN `
                                 -CDNSiteName "CDN" `
                                 -CDNLibraryName "CDNFiles"
