@@ -57,9 +57,9 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
    */
   constructor() {
     super();
-    
+
     this.state = {
-      currentRequestType : "Access",
+      currentRequestType: "Access",
       isValid: false,
       showDialogResult: false,
     };
@@ -72,14 +72,14 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
           <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
             <div className="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg12">
               <ChoiceGroup
-                label={ strings.RequestTypeFieldLabel }
-                onChange={ this._onChangedRequestType }
-                options={ [
+                label={strings.RequestTypeFieldLabel}
+                onChange={this._onChangedRequestType}
+                options={[
                   {
                     key: 'Access',
                     iconProps: { iconName: 'QuickNote' },
                     text: strings.RequestTypeAccessLabel,
-                    checked: true,                    
+                    checked: true,
                   },
                   {
                     key: 'Correct',
@@ -107,241 +107,241 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
           </div>
           <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
             <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <TextField 
-                label={ strings.TitleFieldLabel } 
-                placeholder={ strings.TitleFieldPlaceholder } 
-                required={ true } 
-                value={ this.state.title }
-                onChanged={ this._onChangedTitle }
-                onGetErrorMessage={ this._getErrorMessageTitle }
-                />
-            </div>
-          </div>
-          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <TextField 
-                label={ strings.DataSubjectFieldLabel } 
-                placeholder={ strings.DataSubjectFieldPlaceholder } 
-                required={ true }
-                value={ this.state.dataSubject }
-                onChanged={ this._onChangedDataSubject }
-                />
-            </div>
-          </div>
-          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <TextField 
-                label={ strings.DataSubjectEmailFieldLabel } 
-                placeholder={ strings.DataSubjectEmailFieldPlaceholder } 
-                required={ false } 
-                value={ this.state.dataSubjectEmail }
-                onChanged={ this._onChangedDataSubjectEmail }
-                onGetErrorMessage={ this._getErrorMessageDataSubjectEmail }
-                />
-            </div>
-          </div>
-          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <Toggle
-                defaultChecked={ false }
-                label={ strings.VerifiedDataSubjectFieldLabel }
-                onText={ strings.YesText }
-                offText={ strings.NoText }
-                checked={ this.state.verifiedDataSubject }
-                onChanged={ this._onChangedVerifiedDataSubject }
-                />
-            </div>
-          </div>
-          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <SPPeoplePicker
-                context={ this.props.context }
-                label={ strings.RequestAssignedToFieldLabel }
-                required={ true }
-                placeholder={ strings.RequestAssignedToFieldPlaceholder }
-                onChanged={ this._onChangedRequestAssignedTo }
-                />
-            </div>
-          </div>
-          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <SPDateTimePicker 
-                showTime={ false }
-                includeSeconds={ false }
-                dateLabel={ strings.RequestInsertionDateFieldLabel }
-                datePlaceholder={ strings.RequestInsertionDateFieldPlaceholder }
-                isRequired={ true }
-                initialDateTime={ this.state.requestInsertionDate }
-                onChanged={ this._onChangedRequestInsertionDate }
-                />
-            </div>
-          </div>
-          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <SPDateTimePicker 
-                showTime={ false }
-                includeSeconds={ false }
-                dateLabel={ strings.RequestDueDateFieldLabel }
-                datePlaceholder={ strings.RequestDueDateFieldPlaceholder } 
-                isRequired={ true } 
-                initialDateTime={ this.state.requestDueDate }
-                onChanged={ this._onChangedRequestDueDate }
-                />
+              <TextField
+                label={strings.TitleFieldLabel}
+                placeholder={strings.TitleFieldPlaceholder}
+                required={true}
+                value={this.state.title}
+                onChanged={this._onChangedTitle}
+                onGetErrorMessage={this._getErrorMessageTitle}
+              />
             </div>
           </div>
           <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
             <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
               <TextField
-                label={ strings.AdditionalNotesFieldLabel }
-                multiline 
+                label={strings.DataSubjectFieldLabel}
+                placeholder={strings.DataSubjectFieldPlaceholder}
+                required={true}
+                value={this.state.dataSubject}
+                onChanged={this._onChangedDataSubject}
+              />
+            </div>
+          </div>
+          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+              <TextField
+                label={strings.DataSubjectEmailFieldLabel}
+                placeholder={strings.DataSubjectEmailFieldPlaceholder}
+                required={false}
+                value={this.state.dataSubjectEmail}
+                onChanged={this._onChangedDataSubjectEmail}
+                onGetErrorMessage={this._getErrorMessageDataSubjectEmail}
+              />
+            </div>
+          </div>
+          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+              <Toggle
+                defaultChecked={false}
+                label={strings.VerifiedDataSubjectFieldLabel}
+                onText={strings.YesText}
+                offText={strings.NoText}
+                checked={this.state.verifiedDataSubject}
+                onChanged={this._onChangedVerifiedDataSubject}
+              />
+            </div>
+          </div>
+          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+              <SPPeoplePicker
+                context={this.props.context}
+                label={strings.RequestAssignedToFieldLabel}
+                required={true}
+                placeholder={strings.RequestAssignedToFieldPlaceholder}
+                onChanged={this._onChangedRequestAssignedTo}
+              />
+            </div>
+          </div>
+          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+              <SPDateTimePicker
+                showTime={false}
+                includeSeconds={false}
+                dateLabel={strings.RequestInsertionDateFieldLabel}
+                datePlaceholder={strings.RequestInsertionDateFieldPlaceholder}
+                isRequired={true}
+                initialDateTime={this.state.requestInsertionDate}
+                onChanged={this._onChangedRequestInsertionDate}
+              />
+            </div>
+          </div>
+          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+              <SPDateTimePicker
+                showTime={false}
+                includeSeconds={false}
+                dateLabel={strings.RequestDueDateFieldLabel}
+                datePlaceholder={strings.RequestDueDateFieldPlaceholder}
+                isRequired={true}
+                initialDateTime={this.state.requestDueDate}
+                onChanged={this._onChangedRequestDueDate}
+              />
+            </div>
+          </div>
+          <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+            <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+              <TextField
+                label={strings.AdditionalNotesFieldLabel}
+                multiline
                 autoAdjustHeight
-                value={ this.state.additionalNotes }
-                onChanged={ this._onChangedAdditionalNotes }
-                />
+                value={this.state.additionalNotes}
+                onChanged={this._onChangedAdditionalNotes}
+              />
             </div>
           </div>
           {
             (this.state.currentRequestType === "Access" || this.state.currentRequestType === "Export") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <SPTaxonomyPicker 
-                  context={ this.props.context }
-                  termSetName="Delivery Methods"
-                  label={ strings.DeliveryMethodFieldLabel }
-                  placeholder={ strings.DeliveryMethodFieldPlaceholder }
-                  required={ true }
-                  onChanged={ this._onChangedDeliveryMethod }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <SPTaxonomyPicker
+                    context={this.props.context}
+                    termSetName="Delivery Methods"
+                    label={strings.DeliveryMethodFieldLabel}
+                    placeholder={strings.DeliveryMethodFieldPlaceholder}
+                    required={true}
+                    onChanged={this._onChangedDeliveryMethod}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           {
             (this.state.currentRequestType === "Correct") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <TextField
-                  label={ strings.CorrectionDefinitionFieldLabel }
-                  multiline 
-                  autoAdjustHeight
-                  required={ true }
-                  value={ this.state.correctionDefinition }
-                  onChanged={ this._onChangedCorrectionDefinition }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <TextField
+                    label={strings.CorrectionDefinitionFieldLabel}
+                    multiline
+                    autoAdjustHeight
+                    required={true}
+                    value={this.state.correctionDefinition}
+                    onChanged={this._onChangedCorrectionDefinition}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           {
             (this.state.currentRequestType === "Export") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <SPTaxonomyPicker 
-                  context={ this.props.context }
-                  termSetName="Delivery Format"
-                  label={ strings.DeliveryFormatFieldLabel }
-                  placeholder={ strings.DeliveryFormatFieldPlaceholder }
-                  required={ true } 
-                  onChanged={ this._onChangedDeliveryFormat }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <SPTaxonomyPicker
+                    context={this.props.context}
+                    termSetName="Delivery Format"
+                    label={strings.DeliveryFormatFieldLabel}
+                    placeholder={strings.DeliveryFormatFieldPlaceholder}
+                    required={true}
+                    onChanged={this._onChangedDeliveryFormat}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           {
             (this.state.currentRequestType === "Objection") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <TextField
-                  label={ strings.PersonalDataFieldLabel }
-                  multiline 
-                  autoAdjustHeight
-                  value={ this.state.personalData }
-                  onChanged={ this._onChangedPersonalData }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <TextField
+                    label={strings.PersonalDataFieldLabel}
+                    multiline
+                    autoAdjustHeight
+                    value={this.state.personalData}
+                    onChanged={this._onChangedPersonalData}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           {
             (this.state.currentRequestType === "Objection") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <SPTaxonomyPicker 
-                  context={ this.props.context }
-                  termSetName="Processing Type"
-                  label={ strings.ProcessingTypeFieldLabel }
-                  placeholder={ strings.ProcessingTypeFieldPlaceholder }
-                  required={ true }
-                  onChanged={ this._onChangedProcessingType }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <SPTaxonomyPicker
+                    context={this.props.context}
+                    termSetName="Processing Type"
+                    label={strings.ProcessingTypeFieldLabel}
+                    placeholder={strings.ProcessingTypeFieldPlaceholder}
+                    required={true}
+                    onChanged={this._onChangedProcessingType}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           {
             (this.state.currentRequestType === "Erase") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <Toggle
-                  defaultChecked={ false }
-                  label={ strings.NotifyApplicableFieldLabel }
-                  onText={ strings.YesText }
-                  offText={ strings.NoText }
-                  checked={ this.state.notifyApplicable }
-                  onChanged={ this._onChangedNotifyApplicable }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <Toggle
+                    defaultChecked={false}
+                    label={strings.NotifyApplicableFieldLabel}
+                    onText={strings.YesText}
+                    offText={strings.NoText}
+                    checked={this.state.notifyApplicable}
+                    onChanged={this._onChangedNotifyApplicable}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           {
             (this.state.currentRequestType === "Objection" || this.state.currentRequestType === "Erase") ?
-            <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
-              <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-                <TextField
-                  label={ strings.ReasonFieldLabel }
-                  multiline 
-                  autoAdjustHeight
-                  value={ this.state.reason }
-                  onChanged={ this._onChangedReason }
+              <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
+                <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
+                  <TextField
+                    label={strings.ReasonFieldLabel}
+                    multiline
+                    autoAdjustHeight
+                    value={this.state.reason}
+                    onChanged={this._onChangedReason}
                   />
+                </div>
               </div>
-            </div>
-            : null
+              : null
           }
           <div className={`ms-Grid-row ms-bgColor-neutralLight ms-fontColor-black ${styles.row}`}>
             <div className="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
               <PrimaryButton
                 data-automation-id='saveRequest'
-                label={ strings.SaveButtonText  }
-                disabled={ !this.state.isValid }
-                onClick={ this._saveClick }
-                />
-                &nbsp;&nbsp;
+                label={strings.SaveButtonText}
+                disabled={!this.state.isValid}
+                onClick={this._saveClick}
+              />
+              &nbsp;&nbsp;
               <Button
                 data-automation-id='cancel'
-                label={ strings.CancelButtonText  }
-                onClick={ this._cancelClick }
-                />
+                label={strings.CancelButtonText}
+                onClick={this._cancelClick}
+              />
             </div>
           </div>
         </div>
         <Dialog
-            isOpen={ this.state.showDialogResult }
-            type={ DialogType.normal }
-            onDismiss={ this._closeInsertDialogResult }
-            title={ strings.ItemInsertedDialogTitle }
-            subText={ strings.ItemInsertedDialogSubText }
-            isBlocking={ true }
-          >
+          isOpen={this.state.showDialogResult}
+          type={DialogType.normal}
+          onDismiss={this._closeInsertDialogResult}
+          title={strings.ItemInsertedDialogTitle}
+          subText={strings.ItemInsertedDialogSubText}
+          isBlocking={true}
+        >
           <DialogFooter>
             <PrimaryButton
-              onClick={ this._insertNextClick } 
-              label={ strings.InsertNextLabel } />
-            <DefaultButton 
-              onClick={ this._goHomeClick }
-              label={ strings.GoHomeLabel } />
+              onClick={this._insertNextClick}
+              label={strings.InsertNextLabel} />
+            <DefaultButton
+              onClick={this._goHomeClick}
+              label={strings.GoHomeLabel} />
           </DialogFooter>
         </Dialog>
       </div>
@@ -350,12 +350,21 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
 
   @autobind
   private _onChangedRequestType(ev: React.FormEvent<HTMLInputElement>, option: any) {
-    this.state.currentRequestType = option.key;
-    this.state.deliveryMethod = null;
-    this.state.deliveryFormat = null;
-    this.state.processingType = [];
+    // this.state.currentRequestType = option.key;
+    // this.state.deliveryMethod = null;
+    // this.state.deliveryFormat = null;
+    // this.state.processingType = [];
 
-    this._updateState(this.state);
+    // this._updateState(this.state);
+
+    this.setState((current) => ({
+      ...current,
+      currentRequestType: option.key,
+      deliveryMethod: null,
+      deliveryFormat: null,
+      processingType: [],
+      isValid: this._formIsValid
+    }));
   }
 
   @autobind
@@ -370,13 +379,11 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
 
     let emailRegEx: RegExp = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
-    if (value != null && value.length > 0 && !emailRegEx.test(value))
-    {
-      return(strings.DataSubjectEmailFieldValidationErrorMessage);
+    if (value != null && value.length > 0 && !emailRegEx.test(value)) {
+      return (strings.DataSubjectEmailFieldValidationErrorMessage);
     }
-    else
-    {
-      return("");
+    else {
+      return ("");
     }
   }
 
@@ -388,139 +395,204 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
 
   @autobind
   private _onChangedTitle(newValue: string): void {
-    this.state.title = newValue;
-    this._updateState(this.state);
+    // this.state.title = newValue;
+    // this._updateState(this.state);
+    // state.isValid = this._formIsValid();
+    this.setState((current) => ({
+      ...current,
+      title: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedDataSubject(newValue: string): void {
-    this.state.dataSubject = newValue;
-    this._updateState(this.state);
+   
+    this.setState((current) => ({
+      ...current,
+      dataSubject: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedDataSubjectEmail(newValue: string): void {
-    this.state.dataSubjectEmail = newValue;
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      dataSubjectEmail: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedVerifiedDataSubject(checked: boolean): void {
-    this.state.verifiedDataSubject = checked;
-    this._updateState(this.state);
-  }  
+    this.setState((current) => ({
+      ...current,
+      verifiedDataSubject: checked,
+      isValid: this._formIsValid()
+    }));
+  }
 
   @autobind
   private _onChangedRequestAssignedTo(items: string[]): void {
-    this.state.requestAssignedTo = items[0];
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      requestAssignedTo: items[0],
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedRequestInsertionDate(newValue: Date): void {
-    this.state.requestInsertionDate = newValue;
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      requestInsertionDate: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedRequestDueDate(newValue: Date): void {
-    this.state.requestDueDate = newValue;
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      requestDueDate: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedAdditionalNotes(newValue: string): void {
-    this.state.additionalNotes = newValue;
-    this._updateState(this.state);
+
+    this.setState((current) => ({
+      ...current,
+      additionalNotes: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedDeliveryMethod(terms: ISPTermObject[]): void {
-    if (terms != null && terms.length > 0)
-    {
-      this.state.deliveryMethod = terms[0];
+    if (terms != null && terms.length > 0) {
+      //this.state.deliveryMethod = terms[0];
+      this.setState((current) => ({
+        ...current,
+        deliveryMethod: terms[0],
+        isValid: this._formIsValid()
+      }));
     }
-    else
-    {
-      this.state.deliveryMethod = null;
+    else {
+      //this.state.deliveryMethod = null;
+      this.setState((current) => ({
+        ...current,
+        deliveryMethod: null,
+        isValid: this._formIsValid()
+      }));
     }
-    this._updateState(this.state);
+    //this._updateState(this.state);
   }
 
   @autobind
   private _onChangedCorrectionDefinition(newValue: string): void {
-    this.state.correctionDefinition = newValue;
-    this._updateState(this.state);
+
+    this.setState((current) => ({
+      ...current,
+      correctionDefinition: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedDeliveryFormat(terms: ISPTermObject[]): void {
-    if (terms != null && terms.length > 0)
-    {
-      this.state.deliveryFormat = terms[0];
+    if (terms != null && terms.length > 0) {
+ //     this.state.deliveryFormat = terms[0];
+      this.setState((current) => ({
+        ...current,
+        tideliveryFormattle: terms[0],
+        isValid: this._formIsValid()
+      }));
     }
-    else
-    {
-      this.state.deliveryFormat = null;
+    else {
+      //this.state.deliveryFormat = null;
+      this.setState((current) => ({
+        ...current,
+        titdeliveryFormatle: null,
+        isValid: this._formIsValid()
+      }));
     }
-    this._updateState(this.state);
+    //this._updateState(this.state);
   }
 
   @autobind
   private _onChangedPersonalData(newValue: string): void {
-    this.state.personalData = newValue;
-    this._updateState(this.state);
+
+    this.setState((current) => ({
+      ...current,
+      personalData: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedProcessingType(terms: ISPTermObject[]): void {
-    if (terms != null && terms.length > 0)
-    {
-      this.state.processingType = terms;
+    if (terms != null && terms.length > 0) {
+   //   this.state.processingType = terms;
+      this.setState((current) => ({
+        ...current,
+        processingType: terms,
+        isValid: this._formIsValid()
+      }));
     }
-    else
-    {
-      this.state.processingType = [];
+    else {
+    //  this.state.processingType = [];
+      this.setState((current) => ({
+        ...current,
+        processingType: [],
+        isValid: this._formIsValid()
+      }));
     }
-    this._updateState(this.state);
+   // this._updateState(this.state);
   }
 
   @autobind
   private _onChangedNotifyApplicable(checked: boolean): void {
-    this.state.notifyApplicable = checked;
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      notifyApplicable: checked,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _onChangedReason(newValue: string): void {
-    this.state.reason = newValue;
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      reason: newValue,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind
   private _saveClick(event) {
     event.preventDefault();
-    if (this._formIsValid())
-    {
+    if (this._formIsValid()) {
       let dataManager = new GDPRDataManager();
       dataManager.setup({
         requestsListId: this.props.targetList,
       });
 
-      let request : any = {
-          kind: this.state.currentRequestType,
-          title: this.state.title,
-          dataSubject: this.state.dataSubject,
-          dataSubjectEmail: this.state.dataSubjectEmail,
-          verifiedDataSubject: this.state.verifiedDataSubject,
-          requestAssignedTo: this.state.requestAssignedTo,
-          requestInsertionDate: this.state.requestInsertionDate,
-          requestDueDate: this.state.requestDueDate,
-          additionalNotes: this.state.additionalNotes,
-        };
+      let request: any = {
+        kind: this.state.currentRequestType,
+        title: this.state.title,
+        dataSubject: this.state.dataSubject,
+        dataSubjectEmail: this.state.dataSubjectEmail,
+        verifiedDataSubject: this.state.verifiedDataSubject,
+        requestAssignedTo: this.state.requestAssignedTo,
+        requestInsertionDate: this.state.requestInsertionDate,
+        requestDueDate: this.state.requestDueDate,
+        additionalNotes: this.state.additionalNotes,
+      };
 
-      switch (request.kind)
-      {
+      switch (request.kind) {
         case "Access":
           request.deliveryMethod = {
             Label: this.state.deliveryMethod.name,
@@ -561,8 +633,13 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
       }
 
       dataManager.insertNewRequest(request).then((itemId: number) => {
-        this.state.showDialogResult = true;
-        this._updateState(this.state);
+        // this.state.showDialogResult = true;
+        // this._updateState(this.state);
+        this.setState((current) => ({
+          ...current,
+          showDialogResult: true,
+          isValid: this._formIsValid()
+        }));
       });
     }
   }
@@ -573,8 +650,8 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
     window.history.back();
   }
 
-  private _formIsValid() : boolean {
-    let isValid: boolean = 
+  private _formIsValid(): boolean {
+    let isValid: boolean =
       (this.state.title != null && this.state.title.length > 0) &&
       (this.state.dataSubject != null && this.state.dataSubject.length > 0) &&
       (this.state.requestAssignedTo != null && this.state.requestAssignedTo.length > 0) &&
@@ -586,7 +663,7 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
     }
     if (this.state.currentRequestType == "Export") {
       isValid = isValid && this.state.deliveryFormat != null;
-    } 
+    }
     if (this.state.currentRequestType == "Correct") {
       isValid = isValid && this.state.correctionDefinition != null && this.state.correctionDefinition.length > 0;
     }
@@ -594,13 +671,16 @@ export default class GdprInsertRequest extends React.Component<IGdprInsertReques
       isValid = isValid && this.state.processingType != null && this.state.processingType.length > 0;
     }
 
-    return(isValid);
+    return (isValid);
   }
 
   @autobind
   private _closeInsertDialogResult() {
-    this.state.showDialogResult = false;
-    this._updateState(this.state);
+    this.setState((current) => ({
+      ...current,
+      showDialogResult: false,
+      isValid: this._formIsValid()
+    }));
   }
 
   @autobind

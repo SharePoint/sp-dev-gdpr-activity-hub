@@ -20,7 +20,8 @@ import {
 /**
  * Button
  */
-import { PrimaryButton, DefaultButton, CommandButton, Button, IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { PrimaryButton, DefaultButton, CommandButton, Button, IButtonProps,IconButton } from 'office-ui-fabric-react/lib/Button';
+import { IIconProps, IIconStyles } from 'office-ui-fabric-react/lib/Icon';
 
 import { default as pnp, PermissionKind } from "sp-pnp-js";
 
@@ -63,14 +64,14 @@ export default class GdprDashboard extends React.Component<IGdprDashboardProps, 
                       <div className="ms-Grid-row">
                           <div className="ms-Grid-col ms-u-sm2 ms-u-md2 ms-u-lg2">
                             <CommandButton
-                              icon="ThumbnailView"
+                            //  icon="ThumbnailView"
                               onClick={ this._showMyTasks }>
                               My Tasks
                             </CommandButton>
                           </div>
                           <div className="ms-Grid-col ms-u-sm2 ms-u-md2 ms-u-lg2">
                             <CommandButton
-                              icon="TaskManager"
+                          //    iconProps={iconName:"TaskManager"}
                               onClick={ this._showAllTasks }>
                               All Tasks
                             </CommandButton>
@@ -97,8 +98,8 @@ export default class GdprDashboard extends React.Component<IGdprDashboardProps, 
     
     pnp.sp.web.getCurrentUserEffectivePermissions().then(perms => {
       if (pnp.sp.web.hasPermissions(perms, PermissionKind.ManageWeb)) {
-       this.state.currentUserIsAdmin = true;
-       this.setState(this.state); 
+       
+       this.setState((current)=>({...current,currentUserIsAdmin:true}));
       }
     });
 
@@ -106,25 +107,25 @@ export default class GdprDashboard extends React.Component<IGdprDashboardProps, 
 
   @autobind
   private _showAllTasks(){
-    this.state.filterByCurrentUser = false;
-    this.state.taskItems = [];
-    this.setState(this.state); 
+    // this.state.filterByCurrentUser = false;
+    // this.state.taskItems = [];
+    // this.setState(this.state); 
+    this.setState((current)=>({...current,filterByCurrentUser:false,taskItems:[]}));
     this.refreshTasksList();
   }
 
   @autobind
   private _showMyTasks(){
-    this.state.filterByCurrentUser = true;
-    this.state.taskItems = [];
-    this.setState(this.state); 
+ 
+    this.setState((current)=>({...current,filterByCurrentUser:true,taskItems:[]}));
+   
     this.refreshTasksList();
   }
 
   private refreshTasksList() {
     if (this.props.targetList) {
       this.fetchTasks().then((r) => {
-        this.state.taskItems = r;
-        this.setState(this.state);
+        this.setState((current)=>({...current,taskItems:r}));
       });
     }
   }

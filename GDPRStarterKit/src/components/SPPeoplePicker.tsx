@@ -83,13 +83,13 @@ export class SPPeoplePicker extends React.Component<ISPPeoplePickerProps, ISPPeo
   private _onChangePeoplePicker(items?: IPersonaProps[]): void{     
     
     /** Empty the array */
-    this.state.items = new Array<string>();
+    let newitems = new Array<string>();
 
     /** Fill it with new items */
     items.forEach((i: IPersonaProps) => {
-        this.state.items.push(i.secondaryText);
+        newitems.push(i.secondaryText);
     });
-    this.setState(this.state);
+    this.setState((current)=>({...current,items:newitems}));
 
     if (this.props.onChanged != null)
     {

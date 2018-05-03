@@ -1,1 +1,3 @@
-{"cdnBasePath":"https://publiccdn.sharepointonline.com/tenant.sharepoint.com/sites/CDN/CDNFiles/GDPRActivityHub"}
+{
+    "cdnBasePath": "<!-- PATH TO CDN -->"
+  }

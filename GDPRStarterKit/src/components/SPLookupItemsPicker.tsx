@@ -115,13 +115,19 @@ export class SPLookupItemsPicker extends React.Component<ISPLookupItemsPickerPro
   private _onChangeLookupItemsPicker(items?: ISPItemProps[]): void{     
     
     /** Empty the array */
-    this.state.itemsIds = new Array<number>();
+    let itemsIds = new Array<number>();
+    
+    
 
     /** Fill it with new items */
     items.forEach((i: ISPItemProps) => {
-        this.state.itemsIds.push(i.itemId);
+        itemsIds.push(i.itemId);
     });
-    this.setState(this.state);
+    this.setState((current) => ({
+      ...current,
+      itemsIds: itemsIds
+      
+    }));
 
     if (this.props.onChanged != null)
     {

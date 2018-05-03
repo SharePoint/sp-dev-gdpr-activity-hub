@@ -1,34 +1,48 @@
 {
-  "entries": [
-    {
-      "entry": "./lib/webparts/gdprDashboard/GdprDashboardWebPart.js",
-      "manifest": "./src/webparts/gdprDashboard/GdprDashboardWebPart.manifest.json",
-      "outputPath": "./dist/gdpr-dashboard.bundle.js"
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "gdpr-dashboard-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/gdprDashboard/GdprDashboardWebPart.js",
+          "manifest": "./src/webparts/gdprDashboard/GdprDashboardWebPart.manifest.json"
+        }
+      ]
     },
-    {
-      "entry": "./lib/webparts/gdprHierarchy/GdprHierarchyWebPart.js",
-      "manifest": "./src/webparts/gdprHierarchy/GdprHierarchyWebPart.manifest.json",
-      "outputPath": "./dist/gdpr-hierarchy.bundle.js"
+    "gdpr-hierarchy-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/gdprHierarchy/GdprHierarchyWebPart.js",
+          "manifest": "./src/webparts/gdprHierarchy/GdprHierarchyWebPart.manifest.json"
+        }
+      ]
     },
-    {
-      "entry": "./lib/webparts/gdprInsertRequest/GdprInsertRequestWebPart.js",
-      "manifest": "./src/webparts/gdprInsertRequest/GdprInsertRequestWebPart.manifest.json",
-      "outputPath": "./dist/gdpr-insert-request.bundle.js"
+    "gdpr-insert-request-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/gdprInsertRequest/GdprInsertRequestWebPart.js",
+          "manifest": "./src/webparts/gdprInsertRequest/GdprInsertRequestWebPart.manifest.json"
+        }
+      ]
     },
-    {
-      "entry": "./lib/webparts/gdprInsertEvent/GdprInsertEventWebPart.js",
-      "manifest": "./src/webparts/gdprInsertEvent/GdprInsertEventWebPart.manifest.json",
-      "outputPath": "./dist/gdpr-insert-event.bundle.js"
+    "gdpr-insert-event-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/gdprInsertEvent/GdprInsertEventWebPart.js",
+          "manifest": "./src/webparts/gdprInsertEvent/GdprInsertEventWebPart.manifest.json"
+        }
+      ]
     }
-  ],
-  "externals": {
-    "sp-client-custom-fields": "node_modules/sp-client-custom-fields/dist/sp-client-custom-fields.bundle.js"
   },
   "localizedResources": {
-    "gdprDashboardStrings": "webparts/gdprDashboard/loc/{locale}.js",
-    "gdprHierarchyStrings": "webparts/gdprHierarchy/loc/{locale}.js",
-    "gdprInsertRequestStrings": "webparts/gdprInsertRequest/loc/{locale}.js",
-    "gdprInsertEventStrings": "webparts/gdprInsertEvent/loc/{locale}.js",
-    "sp-client-custom-fields/strings": "../node_modules/sp-client-custom-fields/lib/loc/{locale}.js"
+    "gdprDashboardStrings": "lib/webparts/gdprDashboard/loc/{locale}.js",
+    "gdprHierarchyStrings": "lib/webparts/gdprHierarchy/loc/{locale}.js",
+    "gdprInsertRequestStrings": "lib/webparts/gdprInsertRequest/loc/{locale}.js",
+    "gdprInsertEventStrings": "lib/webparts/gdprInsertEvent/loc/{locale}.js",
+    "sp-client-custom-fields/strings": "node_modules/sp-client-custom-fields/lib/loc/{locale}.js"
+  },
+  "externals": {
+    "sp-client-custom-fields": "node_modules/sp-client-custom-fields/dist/sp-client-custom-fields.bundle.js"
   }
 }
