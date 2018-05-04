@@ -64,14 +64,14 @@ export default class GdprDashboard extends React.Component<IGdprDashboardProps, 
                       <div className="ms-Grid-row">
                           <div className="ms-Grid-col ms-u-sm2 ms-u-md2 ms-u-lg2">
                             <CommandButton
-                            //  icon="ThumbnailView"
+                            iconProps={{ iconName:"ThumbnailView"}}
                               onClick={ this._showMyTasks }>
                               My Tasks
                             </CommandButton>
                           </div>
                           <div className="ms-Grid-col ms-u-sm2 ms-u-md2 ms-u-lg2">
                             <CommandButton
-                          //    iconProps={iconName:"TaskManager"}
+                           iconProps={ {iconName:"TaskManager"} }
                               onClick={ this._showAllTasks }>
                               All Tasks
                             </CommandButton>
