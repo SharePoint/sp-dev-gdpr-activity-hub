@@ -47,7 +47,7 @@ It will start Visual Studio Code, opening the GDPR solution.
 ![The UI of Visual Studio Code while managing the GDPR solution](./Figures/Fig02-VSCode.png)
 
 To host the SPFx assets on the Microsoft Office 365 CDN, follow these steps:
-* Choose a name for a SharePoint Online site collection - which will be created in the next step - and for a document library, within that site, and write them down in a safe place. Usually a good name for such a site is **"CDN"** and a meaningful name for the document library is **"CDNFiles"**. The overall base URL of your CDN will be something like: 
+* Choose a name for a SharePoint Online site collection - which will be created in the next step - and for a document library, within that site, and write them down in a safe place. Usually a good name for such a site is **"CDN"** and a meaningful name for the document library is **"CDNFiles"**. The overall base URL of your CDN will be something like:
 
 ```PowerShell
 https://publiccdn.sharepointonline.com/<your-tenant-name>.sharepoint.com/sites/<your-CDN-site-name>/<document-library-name>/
@@ -154,7 +154,7 @@ Now, go back to the home page of the site and configure the Power BI client-side
 Save and Publish the new home page and you are done!
 
 # Play with the Solution
-Now you are ready to play with the solution. You can find a detailed help in the ["How to Use the GDPR Activity Hub"](./Documentation/How-To-Use-GDPR-Activity-Hub.md) document.
+Now you are ready to play with the solution. You can find a detailed help in the ["How to Use the GDPR Activity Hub"](./User-Guide.md) document.
 
 
 
