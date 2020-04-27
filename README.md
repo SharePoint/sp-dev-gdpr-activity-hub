@@ -1,3 +1,13 @@
+---
+page_type: sample
+products:
+- office-sp
+languages:
+- typescript
+extensions:
+  contentType: samples
+  createdDate: 6/29/2017 8:02:59 AM
+---
 ﻿# GDPR Activity Hub (January 2018)
 This is the repository for the GDPR Activity Hub project.
 
